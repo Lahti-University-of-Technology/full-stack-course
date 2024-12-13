@@ -1,0 +1,218 @@
+[
+    {
+        "project": "Nghi Pham",
+        "evaluators": [
+            "Aqemur Himel - Aqemur.Himel@student.lut.fi",
+            "Mahesh Malladi - Mahesh.Malladi@student.lut.fi",
+            "Trieu Trieu - Trieu.Huynh.Ba.Nguyen@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Aqemur Himel",
+        "evaluators": [
+            "Mahesh Malladi - Mahesh.Malladi@student.lut.fi",
+            "Trieu Trieu - Trieu.Huynh.Ba.Nguyen@student.lut.fi",
+            "Umandi Weerasekara - Umandi.Weerasekara@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Rihards Gailis",
+        "evaluators": [
+            "Zarak Iftikhar - Zarak.Iftikhar@student.lut.fi",
+            "Dhivya Bharathi Radha Krishnan - Dhivya.Bharathi.Radha.Krishnan@student.lut.fi",
+            "Sheraz Anwar - Sheraz.Anwar@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Isuru Hollupathirage",
+        "evaluators": [
+            "Mujtaba Hassan - Mujtaba.Hassan@student.lut.fi",
+            "Iresha Himihami Mudiyanselage - Iresha.Himihami.Mudiyanselage@student.lut.fi",
+            "Nghi Pham - Nghi.T.Pham@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Elena Tishkovskaya",
+        "evaluators": [
+            "Fatemeh Eshghi - Fatemeh.Eshghi@student.lut.fi",
+            "Kushal Bhattarai - Kushal.Bhattarai@student.lut.fi",
+            "Rihards Gailis - Rihards.Gailis@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Feroz Khan",
+        "evaluators": [
+            "Miisa Suorsa - Miisa.Suorsa@student.lut.fi",
+            "Elena Tishkovskaya - Elena.Tishkovskaya@student.lut.fi",
+            "Fatemeh Eshghi - Fatemeh.Eshghi@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Fatima Akhtar",
+        "evaluators": [
+            "Ella Viitasuo - Ella.Viitasuo@student.lut.fi",
+            "Beenish Nazam - Beenish.Nazam@student.lut.fi",
+            "Sumaiya Antara - Sumaiya.Antara@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Ella Viitasuo",
+        "evaluators": [
+            "Beenish Nazam - Beenish.Nazam@student.lut.fi",
+            "Sumaiya Antara - Sumaiya.Antara@student.lut.fi",
+            "Dung Pham - Dung.Pham@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Dhivya Bharathi Radha Krishnan",
+        "evaluators": [
+            "Sheraz Anwar - Sheraz.Anwar@student.lut.fi",
+            "Naosad Hossen - Naosad.Hossen@student.lut.fi",
+            "Muhammad Ali - Muhammad.M.Ali@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Muhammad Ali",
+        "evaluators": [
+            "Zeeshan Rais - Zeeshan.Rais@student.lut.fi",
+            "Isuru Hollupathirage - Isuru.Hollupathirage@student.lut.fi",
+            "Mujtaba Hassan - Mujtaba.Hassan@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Zeeshan Rais",
+        "evaluators": [
+            "Isuru Hollupathirage - Isuru.Hollupathirage@student.lut.fi",
+            "Mujtaba Hassan - Mujtaba.Hassan@student.lut.fi",
+            "Iresha Himihami Mudiyanselage - Iresha.Himihami.Mudiyanselage@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Beenish Nazam",
+        "evaluators": [
+            "Sumaiya Antara - Sumaiya.Antara@student.lut.fi",
+            "Dung Pham - Dung.Pham@student.lut.fi",
+            "Feroz Khan - Feroz.Khan@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Miisa Suorsa",
+        "evaluators": [
+            "Elena Tishkovskaya - Elena.Tishkovskaya@student.lut.fi",
+            "Fatemeh Eshghi - Fatemeh.Eshghi@student.lut.fi",
+            "Kushal Bhattarai - Kushal.Bhattarai@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Kushal Bhattarai",
+        "evaluators": [
+            "Rihards Gailis - Rihards.Gailis@student.lut.fi",
+            "Zarak Iftikhar - Zarak.Iftikhar@student.lut.fi",
+            "Dhivya Bharathi Radha Krishnan - Dhivya.Bharathi.Radha.Krishnan@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Naosad Hossen",
+        "evaluators": [
+            "Muhammad Ali - Muhammad.M.Ali@student.lut.fi",
+            "Zeeshan Rais - Zeeshan.Rais@student.lut.fi",
+            "Isuru Hollupathirage - Isuru.Hollupathirage@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Trieu Trieu",
+        "evaluators": [
+            "Umandi Weerasekara - Umandi.Weerasekara@student.lut.fi",
+            "Fatima Akhtar - Fatima.Akhtar@student.lut.fi",
+            "Ella Viitasuo - Ella.Viitasuo@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Umandi Weerasekara",
+        "evaluators": [
+            "Fatima Akhtar - Fatima.Akhtar@student.lut.fi",
+            "Ella Viitasuo - Ella.Viitasuo@student.lut.fi",
+            "Beenish Nazam - Beenish.Nazam@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Sheraz Anwar",
+        "evaluators": [
+            "Naosad Hossen - Naosad.Hossen@student.lut.fi",
+            "Muhammad Ali - Muhammad.M.Ali@student.lut.fi",
+            "Zeeshan Rais - Zeeshan.Rais@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Mujtaba Hassan",
+        "evaluators": [
+            "Iresha Himihami Mudiyanselage - Iresha.Himihami.Mudiyanselage@student.lut.fi",
+            "Nghi Pham - Nghi.T.Pham@student.lut.fi",
+            "Aqemur Himel - Aqemur.Himel@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Dung Pham",
+        "evaluators": [
+            "Feroz Khan - Feroz.Khan@student.lut.fi",
+            "Miisa Suorsa - Miisa.Suorsa@student.lut.fi",
+            "Elena Tishkovskaya - Elena.Tishkovskaya@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Zarak Iftikhar",
+        "evaluators": [
+            "Dhivya Bharathi Radha Krishnan - Dhivya.Bharathi.Radha.Krishnan@student.lut.fi",
+            "Sheraz Anwar - Sheraz.Anwar@student.lut.fi",
+            "Naosad Hossen - Naosad.Hossen@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Fatemeh Eshghi",
+        "evaluators": [
+            "Kushal Bhattarai - Kushal.Bhattarai@student.lut.fi",
+            "Rihards Gailis - Rihards.Gailis@student.lut.fi",
+            "Zarak Iftikhar - Zarak.Iftikhar@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Iresha Himihami Mudiyanselage",
+        "evaluators": [
+            "Nghi Pham - Nghi.T.Pham@student.lut.fi",
+            "Aqemur Himel - Aqemur.Himel@student.lut.fi",
+            "Mahesh Malladi - Mahesh.Malladi@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Mahesh Malladi",
+        "evaluators": [
+            "Trieu Trieu - Trieu.Huynh.Ba.Nguyen@student.lut.fi",
+            "Umandi Weerasekara - Umandi.Weerasekara@student.lut.fi",
+            "Fatima Akhtar - Fatima.Akhtar@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Sumaiya Antara",
+        "evaluators": [
+            "Dung Pham - Dung.Pham@student.lut.fi",
+            "Feroz Khan - Feroz.Khan@student.lut.fi",
+            "Miisa Suorsa - Miisa.Suorsa@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Taha Ahmed",
+        "evaluators": [
+            "Taha Ahmed - taha.ahmed@student.lut.fi",
+            "Taha Ahmed - taha.ahmed@student.lut.fi",
+            "Taha Ahmed - taha.ahmed@student.lut.fi"
+        ]
+    },
+    {
+        "project": "Sindhuja Chandrasekaran",
+        "evaluators": [
+            "Sindhuja Chandrasekaran - sindhuja.chandrasekaran@student.lut.fi",
+            "Sindhuja Chandrasekaran - sindhuja.chandrasekaran@student.lut.fi",
+            "Sindhuja Chandrasekaran - sindhuja.chandrasekaran@student.lut.fi"
+        ]
+    }
+]
