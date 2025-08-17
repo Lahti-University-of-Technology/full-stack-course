@@ -1,0 +1,4 @@
+# Allow inline HTML
+no-inline-html: false
+# Disable line length rule
+line-length: false
