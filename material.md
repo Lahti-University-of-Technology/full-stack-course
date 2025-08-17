@@ -1,0 +1,46 @@
+# Course Syllabus
+
+- People
+  - Why we build software: serving real people
+  - Working with other humans (including future you)
+  - Communication, feedback, collaboration
+  - Agile, Lean, and other people-aware methods
+  - Empathy in code, docs, and interface design
+- Data
+  - Definition
+  - Collection
+  - Use
+  - Security
+  - Storage
+  - Databases
+- Programming Practice
+  - AI-assisted development tools
+  - IDEs and development tools
+  - Package managers
+  - Working with the command line
+  - Version control (Git and GitHub)
+  - Milestones
+- Full-stack architecture
+- Frontend design
+  - Basics: Browsers, HTML, CSS, JavaScript
+  - Static vs. dynamic content
+  - Component frameworks (e.g., React, Svelte)
+  - Styling and layout systems (CSS, Tailwind, etc.)
+  - Frontend build tools and bundlers
+  - Accessibility and usability
+- Backend design
+  - What is a server?
+  - Receiving requests (request lifecycle, ports, sockets, protocols)
+  - Sending responses (status codes, headers, payloads)
+  - Sockets and connections (TCP/IP basics, HTTP, WebSockets)
+  - Server frameworks (introduced as abstractions solving repetitive boilerplate)
+  - Authentication and sessions (solving the problem of state over stateless HTTP)
+  - Data access (solving structured persistence and query problems)
+  - Scalability and concurrency (solving performance and resource management)
+  - API design
+- State management
+- UX design
+- Security
+- Testing
+- Hosting and deployment
+- Programming paradigms

@@ -1,0 +1,42 @@
+# Course Manual Outline
+
+- Introduction
+  - Brief overview of the course goals and what students will learn.
+- Course Principles
+  - Empathy
+  - Transparency
+  - Direct Communication
+  - Originality
+- Project Overview
+  - Description of the main course project
+  - Expectations and constraints (e.g., originality, public repo, public deployment)
+  - Client-server architecture requirement
+  - Continuous progress and visibility
+- Milestones and Deadlines
+  - Definition and purpose of milestones
+  - List of example milestones:
+  - Brainstorm project ideas
+  - Choose a project
+  - Design user experience
+  - Plan architecture
+  - Choose stack and host
+  - Deploy Hello World
+  - Add CI/CD
+  - Implement API and database
+  - Frontend implementation
+  - Final deployment and presentation
+  - First milestone: public deployment
+- Evaluation Criteria
+  - Clear and consistent commit history
+  - Full-stack architecture
+  - Publicly accessible source code
+  - Secure handling of secrets
+  - Stable and consistent repositories
+  - Non-trivial project scope
+  - Originality
+  - Presentation and documentation
+  - Peer and instructor evaluations
+- Resources and Tools
+  - Recommended reading and reference materials
+  - Tools for development, version control, deployment, and testing
+  - Case studies and external articles
