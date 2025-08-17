@@ -1,4 +1,4 @@
-# Course Syllabus
+# Course Material
 
 - People
   - Why we build software: serving real people
@@ -12,35 +12,67 @@
   - Use
   - Security
   - Storage
+  - Ethics
   - Databases
+    - Early databases
+      - Ancient Sumer
+      - Linked list
+    - SQL
+    - NoSQL
+    - Other
+      - Key-Value store
+      - Graph
+      - Vector
+      - Timeseries
 - Programming Practice
   - AI-assisted development tools
+    - Agentic
   - IDEs and development tools
+    - VSCode
+    - VIM
+  - Languages
+    - Type Safety
+  - Testing
+    - Unit
+    - Integration
+    - End-to-End (E2E)
+    - Acceptance
+    - Regression
+    - Performance (also known as Stress/Load)
+    - Smoke
   - Package managers
   - Working with the command line
   - Version control (Git and GitHub)
   - Milestones
 - Full-stack architecture
-- Frontend design
-  - Basics: Browsers, HTML, CSS, JavaScript
-  - Static vs. dynamic content
-  - Component frameworks (e.g., React, Svelte)
-  - Styling and layout systems (CSS, Tailwind, etc.)
-  - Frontend build tools and bundlers
-  - Accessibility and usability
-- Backend design
-  - What is a server?
-  - Receiving requests (request lifecycle, ports, sockets, protocols)
-  - Sending responses (status codes, headers, payloads)
-  - Sockets and connections (TCP/IP basics, HTTP, WebSockets)
-  - Server frameworks (introduced as abstractions solving repetitive boilerplate)
-  - Authentication and sessions (solving the problem of state over stateless HTTP)
-  - Data access (solving structured persistence and query problems)
-  - Scalability and concurrency (solving performance and resource management)
-  - API design
-- State management
-- UX design
-- Security
-- Testing
+  - Frontend
+    - Browsers
+      - Document Object Model (DOM)
+      - Separation of concerns
+        - HyperText Markup Language (HTML)
+          - content
+        - Cascading Style Sheets (CSS)
+          - presentation
+        - JavaScript
+          - interactivity
+    - Frontend frameworks
+      - Component frameworks (e.g., React, Svelte)
+    - User experience design (UXD)
+      - Accessibility and usability
+    - Styling and layout systems (CSS, Tailwind, etc.)
+    - Frontend build tools and bundlers
+    - State management
+  - Backend
+    - What is a server?
+      - Receiving requests (request lifecycle, ports, sockets, protocols)
+      - Sending responses (status codes, headers, payloads)
+      - Sockets and connections (TCP/IP basics, HTTP, WebSockets)
+    - Server frameworks (introduced as abstractions solving repetitive boilerplate)
+    - Authentication and sessions (solving the problem of state over stateless HTTP)
+    - Data access (solving structured persistence and query problems)
+    - Cloud
+      - Scalability and concurrency (solving performance and resource management)
+  - Communication between Frontend and Backend
+    - Protocols
 - Hosting and deployment
 - Programming paradigms
