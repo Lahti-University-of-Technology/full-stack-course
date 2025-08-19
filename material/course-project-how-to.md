@@ -61,7 +61,7 @@ All applications are an *experience* of some sort for their users. What sort of 
 
 - Think about how users will achieve the main purpose of the software.  
 - Start with paper and pencil: draw wireframes, arrows, and flows.  
-  - Eventually, you might use a tool like <https://draw.io>
+  - Eventually, you might use tools like <https://draw.io> or <https://excalidraw.com>
 - Make a paper mockup. Ask potential users to perform specific tasks with it. Observe, note problems, and ask about their experience.  
 - Sketch the UX flow. Add these sketches to your documentation.
 - Describe the User Experience for your app clearly and directly.
