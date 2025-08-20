@@ -67,6 +67,45 @@
       - Logic programming (e.g., Prolog): rules and relationships guide inference.  
       - Array languages (e.g., APL, J): vectorized computation over data arrays.  
       - AI-centric (e.g., Lisp): symbolic manipulation and metaprogramming.
+- Security
+  - Principles
+    - Confidentiality, Integrity, Availability (CIA triad)  
+      Core goals of security: protect data secrecy, ensure correctness, and maintain system uptime.
+    - Least Privilege  
+      Grant users and services only the permissions they need, nothing more.
+    - Defense in Depth  
+      Layered controls (firewalls, auth, monitoring) reduce risk if one layer fails.
+  - Common Threats
+    - Injection (SQL, command)  
+      Malicious input alters queries or commands.
+    - Cross-Site Scripting (XSS)  
+      Attacker injects scripts into a web page viewed by others.
+    - Cross-Site Request Forgery (CSRF)  
+      Tricks a user’s browser into making unwanted requests.
+    - Authentication & session attacks  
+      Credential theft, session hijacking, brute force.
+    - Supply chain risks  
+      Vulnerable dependencies, compromised packages.
+  - Practices
+    - Secure coding guidelines  
+      Validate inputs, escape outputs, sanitize user data.
+    - Cryptography  
+      Use proven algorithms (AES, RSA, SHA-2, TLS). Avoid “rolling your own crypto.”
+    - Authentication & Authorization  
+      Password hashing (bcrypt, Argon2), MFA, role-based access control.
+    - Secrets management  
+      Keep API keys and credentials out of source code (vaults, env vars).
+    - Dependency scanning  
+      Use tools like `npm audit`, Snyk, Dependabot to detect vulnerable libraries.
+    - Monitoring & logging  
+      Track anomalies, failed logins, and unusual traffic for early detection.
+  - Secure Development Lifecycle
+    - Threat modeling  
+      Anticipate attack surfaces and design mitigations.
+    - Code reviews with security in mind  
+      Look for unsafe patterns and dependency risks.
+    - Security testing  
+      Static analysis (linting), dynamic analysis (DAST), penetration testing, and fuzzing.
 - Testing
     - Types
       - Unit  
