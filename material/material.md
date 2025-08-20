@@ -2,102 +2,167 @@
 
 - People
   - Why we build software: serving real people  
-    Software exists to solve human problems; every feature should address a user need. Personas, user stories, and usability studies keep teams focused on delivering value.
+    Software exists to solve human problems. Every feature should address a user need. Personas (fictional user types), user stories (narrative feature descriptions), and usability studies help teams stay focused on delivering value.
   - Working with other humans (including future you)  
-    Code is read more than it is written. Clear naming, comments, and tests help teammates—and your future self—understand and maintain the system.
+    Code is read more than it is written. Clear naming, thoughtful comments, and well-scoped tests help teammates—and your future self—understand, maintain, and evolve the system.
   - Communication, feedback, collaboration  
-    Stand-ups, design docs, pair programming, and code reviews create feedback loops that surface issues early and build shared ownership.
+    Stand-ups, design docs, pair programming, and code reviews create feedback loops that surface issues early and build shared ownership of the codebase.
   - Agile, Lean, and other people-aware methods  
-    Iterative methodologies such as Scrum, Kanban, and Lean emphasize small batches, rapid delivery, and continuous improvement aligned with customer value.
+    Iterative methodologies such as Scrum, Kanban, and Lean emphasize small batches, rapid delivery, and continuous improvement centered on delivering customer value.
   - Empathy in code, docs, and interface design  
-    Inclusive language, accessibility features, and thoughtful documentation ensure software welcomes a diverse audience and minimizes friction.
+    Inclusive language, accessibility features, and clear documentation ensure that software welcomes a diverse audience and minimizes confusion and frustration.
+
 - Data
   - Definition  
-    Data is recorded information—numbers, text, images—that represents facts or observations. It becomes valuable when transformed into insights or features.
+    Data is recorded information—numbers, text, images, signals—that represents facts or observations. It becomes valuable when interpreted or transformed into insights, decisions, or product features.
   - Collection  
-    Gathered through user input, sensors, logs, and third-party APIs. Effective collection requires consent, validation, and awareness of bias.
+    Gathered through user input, logs, sensors, telemetry, and third-party APIs. Effective collection requires user consent, data validation, and awareness of systemic or sampling bias.
   - Use  
-    Applications analyze and manipulate data for personalization, analytics, and decision making while honoring the principle of minimal, purpose-driven usage.
+    Applications analyze and manipulate data for personalization, analytics, automation, and decision-making. Responsible use adheres to the principle of *data minimization*—only collect what is needed and use it with purpose.
   - Security  
-    Protecting confidentiality, integrity, and availability through encryption, access control, auditing, and secure transport protocols.
+    Protect data through encryption, access control, secure transport (TLS), auditing, and redundancy. Guard against leaks, tampering, and unauthorized access.
   - Storage  
-    Data may be transient in memory or persisted to files, databases, or cloud object stores. Choice depends on volume, access patterns, and consistency needs.
+    Data may reside in memory, be persisted in files, databases, or object stores. Storage choice depends on durability, volume, query patterns, latency, and consistency requirements.
   - Ethics  
-    Respect privacy, obtain informed consent, and mitigate harmful biases. Regulations such as GDPR or HIPAA guide responsible data handling.
+    Respect user privacy, obtain informed consent, avoid manipulation, and mitigate biases. Legal frameworks like GDPR and HIPAA guide responsible collection and handling.
   - Databases
     - Early databases
       - Ancient Sumer  
-        Clay tablets recorded inventories and trades, illustrating humanity’s long-standing need to track data.
+        Clay tablets recorded transactions, trades, and inventories—an early example of structured data collection.
       - Linked list  
-        An early in-memory structure where each record points to the next; foundational for many file systems and databases.
+        A foundational in-memory structure in early computing where each record points to the next. Precursor to file systems and low-level databases.
     - SQL  
-      Relational databases organize data into structured tables with schemas. SQL queries allow declarative data manipulation and support ACID transactions.
+      Relational databases organize structured data into schemas with tables, rows, and constraints. SQL enables declarative queries, joins, and updates. Guarantees like ACID ensure transactional consistency.
     - NoSQL  
-      A family of databases—document, key-value, columnar—that favors scalability and flexible schemas, often embracing eventual consistency.
+      A class of non-relational databases—document, key-value, columnar—that prioritize scalability, flexibility, and high availability. Often embrace eventual consistency (CAP theorem).
     - Other
       - Key-Value store  
-        Stores arbitrary values indexed by unique keys (e.g., Redis, DynamoDB). Ideal for caching and session data.
+        Stores arbitrary values by unique keys. Fast and simple (e.g., Redis, DynamoDB). Ideal for caching, sessions, and lookup-heavy access patterns.
       - Graph  
-        Represents entities and relationships as nodes and edges (e.g., Neo4j). Enables traversal queries like social network analysis.
+        Models relationships as nodes and edges (e.g., Neo4j, ArangoDB). Suited for social networks, recommendation engines, and knowledge graphs.
       - Vector  
-        Persists high-dimensional embeddings used for similarity search and retrieval-augmented generation (e.g., FAISS, Pinecone).
+        Stores high-dimensional embeddings for similarity search and retrieval-augmented generation (e.g., FAISS, Pinecone). Common in AI pipelines.
       - Timeseries  
-        Optimized for timestamped data such as metrics or IoT readings (e.g., InfluxDB). Supports windowed queries and retention policies.
+        Specialized for timestamped data such as metrics, IoT signals, and logs (e.g., InfluxDB, TimescaleDB). Supports time-window queries, retention, and downsampling.
+
 - Programming Practice
   - AI-assisted development tools  
-    Services like GitHub Copilot and Tabnine suggest code, tests, and documentation, accelerating routine tasks while leaving humans responsible for review and design decisions.
+    Services like GitHub Copilot and Tabnine suggest code, tests, and documentation. They accelerate routine tasks, but developers remain responsible for review, correctness, and ethical use.
     - Agentic  
-      Emerging tools that plan and execute multi-step changes autonomously. They require clear constraints and human oversight to avoid unintended modifications.
+      Experimental tools that plan and execute multi-step tasks (e.g., modifying many files to add a feature). Require strict constraints and human oversight to avoid unintended changes.
   - IDEs and development tools
     - VSCode  
-      Extensible editor with debugging, terminals, and a rich extension marketplace. Supports remote development and real-time collaboration.
+      A modern, extensible editor with debugging, terminals, extensions, remote development, and collaborative coding features.
     - VIM  
-      Modal, keyboard-centric editor known for speed and scriptability. Plugins and dotfiles tailor it from minimalism to full IDE.
+      A modal, keyboard-centric editor with high speed and scriptability. Known for its steep learning curve but favored for precision and minimalism.
   - Languages
     - Type Safety  
-      Ensures operations on data are valid. Static systems (TypeScript, Rust) catch errors at compile time; dynamic checks (Python, JavaScript) validate at runtime.
+      Type systems prevent invalid operations. Static systems (TypeScript, Rust) catch errors at compile time; dynamic systems (Python, JavaScript) detect them at runtime. Type safety avoids bugs like calling `.map()` on `undefined`.
   - Paradigms
     - Imperative/Procedural  
-      Programs specify step-by-step commands that mutate state. Common in C, Python scripts, and shell programs.
+      Programs specify step-by-step instructions that mutate state. Common in C, Python, and shell scripting.
     - Object Orientation (OO)  
-      Models software as interacting objects encapsulating state and behavior. Supports abstraction, inheritance, and polymorphism.
+      Models systems as interacting objects encapsulating state and behavior. Enables abstraction, encapsulation, inheritance, and polymorphism.
     - Functional Programming (FP)  
-      Emphasizes pure functions, immutability, and higher-order composition. Seen in Haskell, Elixir, and increasingly in JavaScript and Java.
+      Emphasizes pure functions, immutability, and composition. Seen in Haskell, Elixir, and increasingly in JavaScript and Scala.
     - Others: Logic, Array, AI  
-      Logic programming (Prolog) expresses relationships and rules; array languages (APL, J) operate on whole data sets; AI-centric languages (Lisp) enable symbolic processing.
+      - Logic programming (e.g., Prolog): rules and relationships guide inference.  
+      - Array languages (e.g., APL, J): vectorized computation over data arrays.  
+      - AI-centric (e.g., Lisp): symbolic manipulation and metaprogramming.
   - Testing
     - Types
       - Unit  
-        Validates individual functions or classes in isolation.
+        Tests individual functions or classes in isolation.
       - Integration  
-        Checks that components work together, such as a controller calling a database.
+        Tests interactions between components (e.g., API + database).
       - End-to-End (E2E)  
-        Exercises complete user workflows through the full stack using tools like Cypress.
+        Tests full user workflows through the interface (e.g., Cypress, Playwright).
       - Acceptance  
-        Verifies that the system meets business requirements, often expressed as user stories.
+        Verifies that the system meets functional requirements and user stories.
       - Regression  
-        Re-runs prior tests to ensure new changes do not reintroduce old bugs.
-      - Performance (also known as Stress/Load)  
-        Measures responsiveness and stability under expected and extreme demand.
+        Re-tests existing features to catch reintroduced bugs.
+      - Performance (Stress/Load)  
+        Measures system behavior under expected and extreme load. Includes throughput, latency, and error rates.
       - Smoke  
-        Quick, shallow tests that confirm basic functionality before deeper suites run.
+        Quick, high-level checks to ensure basic functionality before running full test suites.
   - Package managers  
-    Automate fetching and versioning of third-party libraries (npm, pip, Cargo). Lockfiles and semantic versioning make builds reproducible.
+    Automate dependency installation and versioning (e.g., npm, pip, Cargo). Lockfiles ensure reproducibility. Semantic versioning helps avoid breaking changes.
   - Working with the command line  
-    Shells (bash, zsh) enable scripting, automation, and remote management; pipes and redirection compose small tools into powerful workflows.
+    Shells (bash, zsh) enable scripting, task automation, and remote ops. Pipes (`|`) and redirection (`>`, `<`) combine small tools into powerful workflows.
   - Version control (Git and GitHub)  
-    Git records changes as commits and branches. Platforms like GitHub add pull requests, issue tracking, and integration hooks.
+    Git tracks changes via commits and branches. GitHub adds pull requests, issue tracking, and CI hooks. Enables collaboration, experimentation, and traceability.
   - Milestones  
-    Planned checkpoints that bundle features and deadlines, guiding progress and aligning engineering work with stakeholder expectations.
+    Planning checkpoints that bundle related work and align deadlines. Anchor project pacing, team focus, and stakeholder expectations.
+
 - Full-stack architecture
   - Frontend  
-    The portion of the application executed in the user's browser, translating data into interactive views.
+    The portion of the application executed in the user’s browser. Responsible for UI rendering, interactivity, and communicating with backends.
     - Browsers
       - Document Object Model (DOM)  
-        Tree representation of HTML that can be queried and updated via APIs.
+        A tree representation of the HTML structure. APIs enable querying and dynamic mutation of elements.
       - Event Loop  
-        Handles user events, network callbacks, and rendering on a single thread without blocking.
+        Processes tasks like user input and async callbacks in a non-blocking queue. Enables smooth interactions on a single thread.
       - Separation of concerns
+        - HyperText Markup Language (HTML)
+          - content  
+            Provides semantic structure—`<nav>`, `<article>`, `<h1>`—to help browsers and assistive tech understand document roles.
+        - Cascading Style Sheets (CSS)
+          - presentation  
+            Specifies layout, colors, and spacing. Rules cascade and combine through specificity and inheritance.
+        - JavaScript
+          - interactivity  
+            Adds dynamic behavior: event listeners, data binding, animations, API calls.
+    - Frameworks  
+      *Frontend frameworks* are intent-based abstractions that describe UIs in terms of meaning (buttons, components) rather than raw DOM operations. Instead of `document.createElement("button")`, we write `<Button>Click</Button>` and let the framework handle DOM diffing and updates.
+      - Component frameworks (e.g., React, Svelte)
+        - React  
+          - Uses a virtual DOM: UI is declared in components returning virtual nodes. On state change, React diffs new and old trees and applies minimal DOM mutations. JSX compiles to `React.createElement` calls.
+        - Svelte  
+          - No virtual DOM. At build time, Svelte compiles components into imperative JavaScript that manipulates the DOM directly. Reactive declarations (`$:`) are compiled into update logic. Very low runtime overhead.
+    - User experience design (UXD)  
+      The process of creating intuitive, usable, and accessible interfaces through research, prototyping, and iteration.
+      - Accessibility and usability (a11y)  
+        Inclusive design ensures software is usable by people with disabilities. Use semantic HTML, ARIA attributes, keyboard support, and color contrast.
+      - Internationalization (i18n)  
+        Prepares software for localization: extract strings, support RTL scripts, format dates and currencies per locale.
+    - Styling and layout systems (CSS, Tailwind, etc.)  
+      Utility-first tools like Tailwind enforce design consistency. CSS Grid and Flexbox offer powerful layout primitives for responsive design.
+    - Frontend build tools and bundlers  
+      Tools like Webpack, Vite, and Parcel compile modern syntax (e.g., JSX, TypeScript), bundle assets, and optimize performance for deployment.
+    - State management  
+      Tracks and updates application data across components. Ranges from local state (React `useState`) to centralized stores (Redux, Zustand). Clear state flows simplify reasoning and debugging.
+  - Backend  
+    Server-side logic that handles requests, enforces rules, and connects to storage.
+    - What is a server?
+      - Receiving requests (request lifecycle, ports, sockets, protocols)  
+        Listens on ports (e.g., 80, 443), parses incoming messages (e.g., HTTP), and routes them through middleware and handlers.
+      - Sending responses (status codes, headers, payloads)  
+        Sends status (`200 OK`, `404 Not Found`), headers (e.g., `Content-Type`, `Set-Cookie`), and payloads (HTML, JSON, files).
+      - Sockets and connections (TCP/IP basics, HTTP, WebSockets)  
+        TCP ensures reliable transport; HTTP runs atop TCP as stateless text; WebSockets upgrade HTTP for real-time, bidirectional messaging.
+    - Server frameworks (introduced as abstractions solving repetitive boilerplate)  
+      Express (Node), Django (Python), and Spring (Java) abstract routing, parsing, templating, and middleware—letting developers focus on logic.
+    - Authentication and sessions (solving the problem of state over stateless HTTP)  
+      Auth methods include cookies, JWTs, OAuth2. Sessions track user identity across requests via server memory or token validation.
+    - Data access (solving structured persistence and query problems)  
+      Libraries like Prisma and Sequelize map database tables to objects and provide type-safe queries and migrations.
+    - Cloud
+      - Scalability and concurrency (solving performance and resource management)  
+        Horizontal scaling adds instances behind a load balancer. Async patterns (e.g., queues, workers) and serverless platforms handle bursty traffic.
+
+  - Communication between Frontend and Backend
+    - Protocols  
+      - REST: resource-oriented, uses standard HTTP verbs.  
+      - GraphQL: flexible client-defined queries.  
+      - gRPC: binary protocol for typed RPC over HTTP/2.  
+      - WebSockets: full-duplex streams for real-time apps.
+
+- Hosting and deployment
+  - Continuous Integration (CI)  
+    Every commit triggers builds and tests, catching regressions early. Tools: GitHub Actions, GitLab CI, CircleCI.
+  - Continuous Development (CD)  
+    Continuous Delivery: always-ready-to-ship builds.  
+    Continuous Deployment: auto-release to staging/production. Reduces friction and encourages small, frequent updates.      - Separation of concerns
         - HyperText Markup Language (HTML)
           - content  
             Provides semantic structure; tags like `<article>` or `<nav>` convey meaning to browsers and assistive technologies.
