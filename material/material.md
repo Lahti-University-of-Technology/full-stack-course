@@ -69,7 +69,7 @@
       - Logic programming (e.g., Prolog): rules and relationships guide inference.  
       - Array languages (e.g., APL, J): vectorized computation over data arrays.  
       - AI-centric (e.g., Lisp): symbolic manipulation and metaprogramming.
-  - Testing
+- Testing
     - Types
       - Unit  
         Tests individual functions or classes in isolation.
@@ -85,6 +85,15 @@
         Measures system behavior under expected and extreme load. Includes throughput, latency, and error rates.
       - Smoke  
         Quick, high-level checks to ensure basic functionality before running full test suites.
+      - Fuzzing  
+        Automated testing that feeds random, unexpected, or malformed inputs to uncover crashes, memory leaks, or security vulnerabilities. Especially useful for parsers, compilers, and network protocols.
+    - Approaches
+      - Test-Driven Development (TDD)  
+        Write failing tests before implementing code. Ensures minimal, testable design and prevents over-engineering.
+      - Behavior-Driven Development (BDD)  
+        Extends TDD by writing tests in natural language scenarios (Given–When–Then). Bridges communication between developers, QA, and stakeholders.
+      - Domain-Driven Design (DDD) testing practices  
+        Aligns tests with business domains and ubiquitous language. Encourages modeling and testing around domain concepts.
   - Package managers  
     Automate dependency installation and versioning (e.g., npm, pip, Cargo). Lockfiles ensure reproducibility. Semantic versioning helps avoid breaking changes.
   - Working with the command line  
