@@ -18,7 +18,7 @@ If this is clear and obvious to you, you might be able to skim the rest.
 - Be transparent. Keep a public repository and public deployment unless I approve an exception. Commit regularly. Do not rewrite history to hide mistakes.
 - Disclose help. Cite people, libraries, tutorials, and AI tools. Say exactly what you used and how.
 - Use third-party code responsibly. Check the license. Attribute clearly. Only include what you understand.
-- Use AI as a tool, not a substitute. You may use AI for brainstorming, examples, boilerplate, tests, and explanations. You must document prompts and which outputs you kept. You must be able to reproduce and explain the result without AI.
+- Use AI as a tool, not a substitute. You may use AI for brainstorming, examples, boilerplate, tests, and explanations. You are encouraged to document prompts and which outputs you kept. You must be able to reproduce and explain the result without AI.
 - Collaborate ethically. Discuss ideas freely. Never share or submit code for someone else. Never paste someone else’s solution.
 - Protect data and secrets. Do not commit credentials. Do not use real personal data without informed consent. Use environment variables. Rotate keys if leaked.
 - Tell the truth. Do not fabricate results, demos, logs, tests, or commit history.
