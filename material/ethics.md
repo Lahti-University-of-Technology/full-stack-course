@@ -14,8 +14,6 @@ If this is clear and obvious to you, this document probably does not apply to yo
 
 ## Positive expectations
 
-You will:
-
 - Do original work. Write code and text yourself. Use sources to learn, not to impersonate competence.
 - Be transparent. Keep a public repository and public deployment unless I approve an exception. Commit regularly. Do not rewrite history to hide mistakes.
 - Disclose help. Cite people, libraries, tutorials, and AI tools. Say exactly what you used and how.
