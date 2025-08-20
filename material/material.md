@@ -12,8 +12,7 @@
   - Empathy in code, docs, and interface design  
     Inclusive language, accessibility features, and clear documentation ensure that software welcomes a diverse audience and minimizes confusion and frustration.
 - Data
-  - Definition  
-    Data is recorded information—numbers, text, images, signals—that represents facts or observations. It becomes valuable when interpreted or transformed into insights, decisions, or product features.
+  Data is anything observed and recorded.
   - Collection  
     Gathered through user input, logs, sensors, telemetry, and third-party APIs. Effective collection requires user consent, data validation, and awareness of systemic or sampling bias.
   - Use  
