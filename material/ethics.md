@@ -1,6 +1,6 @@
 # Full Stack Development course: expectations and ethical obligations
 
-This document sets out the expectations for conduct in this course and the consequences of falling short. Most students already act responsibly; these rules exist to make expectations explicit and to ensure fairness. Read this once and follow it throughout the course. If anything is unclear, it is your responsibility to ask for clarification before submitting work. "I did not know" is not an excuse.
+This document sets out the expectations for conduct in this course and the consequences of falling short. Most students already act responsibly; these rules exist to make expectations explicit and to ensure fairness. Read this once and follow it throughout the course. If anything is unclear, it is your responsibility to ask for clarification before submitting work. "I misunderstood" is not an excuse.
 
 ## Principles
 
@@ -33,7 +33,9 @@ It is far better to fail by lack of work than to fail by cheating. Any one of th
 - Hiding work in private repositories to avoid review when public work is required.
 - Tampering with commit history to misrepresent timeline or authorship.
 - A code walkthrough you cannot pass. If you cannot explain your own submission, it is not yours.
-- Large last-minute commit dump, unclear authorship, or even minor timeline games.
+- Large, polished commit dumps,
+- unclear authorship, or
+- even minor timeline games.
 
 These may also trigger course failure and a report to the university.
 
@@ -137,7 +139,7 @@ If you cannot do these things, the work is not yours.
 
 ### Note on disclosure
 
-While disclosure is not required in this course, in professional or academic contexts outside, disclosure may be mandatory. You should be prepared to adapt to stricter standards in research, industry, or publishing.
+While disclosure of AI contribution is not required in this course, in professional or academic contexts outside, disclosure may be mandatory. You should be prepared to adapt to stricter standards in research, industry, or publishing.
 
 ## Third-party code and content
 
@@ -192,12 +194,13 @@ Rarely, GitHub or Microsoft will ban a user without explanation or appeal. You m
 
 ### Forbidden
 
-- Sharing accounts or tokens.
-- Creating secondary accounts to evade limits, hide authorship, simulate activity, or bypass a ban.
-- Buying or trading stars, forks, followers, traffic, or reviews.
-- Spam or automated engagement that violates platform terms.
-- Distributing malware, infringing code or data, or violating licenses.
-- Abusive scraping, rate limit evasion, credential stuffing, or similar abuse.
+- Any violation of any account's Terms of Service, not limited to:
+  - Sharing passwords, accounts or tokens.
+  - Creating secondary accounts to evade limits, hide authorship, simulate activity, or bypass a ban.
+  - Buying or trading stars, forks, followers, traffic, or reviews.
+  - Spam or automated engagement that violates platform terms.
+  - Distributing malware, infringing code or data, or violating licenses.
+  - Abusive scraping, rate limit evasion, credential stuffing, or similar abuse.
 
 These behaviors often trigger platform enforcement and are course violations on their own.
 
@@ -210,7 +213,7 @@ These behaviors often trigger platform enforcement and are course violations on 
 
 ### Safeguards (strongly recommended)
 
-- Keep an approved secondary remote ready, such as GitLab.
+- Keep a secondary remote ready, such as GitLab.
 - Push mirrors regularly so commit history, issues, and CI logs are duplicated.
 - Export a weekly repo bundle or release artifact that includes commit history and build logs.
 
@@ -237,16 +240,17 @@ Make your work easy to inspect from idea to production. I and your evaluators sh
 These are non-negotiable and violations may result in a 0 for the project.
 
 - Production deploy must build from the `main` branch of the project repository.
-- Clear commit history tied to your work. No bulk dumps at the deadline.
+- Clear commit history tied to your work. No bulk dumps.
 - Contributions to `main` must have a readable history. Do not rewrite history to hide authorship or timing.
 - Public URL for the running app when required.
-- Steps from concept to production are explainable with evidence. Issues, pull requests, CI logs, deployment notes, and test results must be accessible.
+- Steps from concept to production are explainable with evidence.
+- Issues, pull requests, CI logs, deployment notes, and test results must be accessible.
 
 ### Not required, but strongly protective
 
 These files are optional. If there is any question about authorship or ethics and these are not present or are incomplete, the burden shifts to you. I will freeze grades, audit the work, and apply deductions or a zero if you cannot justify your submission.
 
-- `ATTRIBUTION.md`: list libraries, tutorials, snippets, people, and any code you did not write originally. Include links and licenses.
+- `ATTRIBUTION.md` (alternately, `CREDIT.md`): list libraries, tutorials, snippets, people, and any code you did not write originally. Include links and licenses.
 - `AI_USAGE.md`: list tools, prompts, exact outputs you kept, and the edits you made.
 
 Minimal entry format:
@@ -300,6 +304,8 @@ I may ask for a live walkthrough, a quick refactor, or a time-boxed reproduction
 
 No list of rules can cover every possible situation. People are endlessly creative in finding ways to bend or evade obligations. This document sets clear standards, but it is not exhaustive. Any attempt to work around the spirit of these expectations, while technically avoiding what is written, will be treated as a violation. When in doubt, ask for clarification before acting.
 
+Ask questions early. Get clarity. Own your work.
+
 [] *By remaining in the course I affirm that I have read, understood, and will follow this document.*
 
-Ask questions early. Get clarity. Own your work.
+
