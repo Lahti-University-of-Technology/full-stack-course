@@ -70,6 +70,14 @@
       - Logic programming (e.g., Prolog): rules and relationships guide inference.  
       - Array languages (e.g., APL, J): vectorized computation over data arrays.  
       - AI-centric (e.g., Lisp): symbolic manipulation and metaprogramming.
+  - Package managers
+    Package managers install and track external libraries that applications depend on. They standardize environments so builds are repeatable across machines and deployments. In full stack projects, package managers streamline setup and help avoid dependency conflicts. Tools also surface security and licensing issues early.
+  - Working with the command line
+    The command line is a text-based interface for controlling a computer. It enables automation, remote management, and efficient execution of developer tools. Mastering shells and scripting streamlines tasks like builds, deployments, and data processing. Familiarity with pipes (`|`) and redirection (`>`, `<`) encourages composing small programs into powerful workflows.
+  - Version control (Git and GitHub)
+    Version control records changes to code so developers can collaborate and revert with confidence. Git's branching model supports experimentation without risking main code paths. GitHub adds pull requests, issue tracking, and continuous integration hooks that align teams. Using version control rigorously ensures traceability and simplifies code reviews.
+  - Milestones
+    Milestones are planned checkpoints that group related work toward a goal. They give teams intermediate targets, enabling feedback and course corrections. In full stack projects, milestones synchronize frontend and backend schedules and communicate progress to stakeholders. Clear milestones help manage scope and maintain momentum.
 - Security
   Security is the discipline of defending software and data against misuse and damage. Full stack applications often handle sensitive information and operate on exposed networks, making security a daily concern. Secure habits protect users, preserve business trust, and reduce costly breaches. Integrating security into development prevents vulnerabilities from reaching production.
   - Principles
@@ -136,14 +144,6 @@
         Extends TDD by writing tests in natural language scenarios (Given–When–Then). Bridges communication between developers, QA, and stakeholders.
       - Domain-Driven Design (DDD) testing practices  
         Aligns tests with business domains and ubiquitous language. Encourages modeling and testing around domain concepts.
-- Package managers
-  Package managers install and track external libraries that applications depend on. They standardize environments so builds are repeatable across machines and deployments. In full stack projects, package managers streamline setup and help avoid dependency conflicts. Tools also surface security and licensing issues early.
-- Working with the command line
-  The command line is a text-based interface for controlling a computer. It enables automation, remote management, and efficient execution of developer tools. Mastering shells and scripting streamlines tasks like builds, deployments, and data processing. Familiarity with pipes (`|`) and redirection (`>`, `<`) encourages composing small programs into powerful workflows.
-- Version control (Git and GitHub)
-  Version control records changes to code so developers can collaborate and revert with confidence. Git's branching model supports experimentation without risking main code paths. GitHub adds pull requests, issue tracking, and continuous integration hooks that align teams. Using version control rigorously ensures traceability and simplifies code reviews.
-- Milestones
-  Milestones are planned checkpoints that group related work toward a goal. They give teams intermediate targets, enabling feedback and course corrections. In full stack projects, milestones synchronize frontend and backend schedules and communicate progress to stakeholders. Clear milestones help manage scope and maintain momentum.
 - Full-stack architecture
   Full-stack architecture describes how client interfaces, server logic, and data storage combine to deliver a complete application. Understanding the responsibilities of each layer helps developers design clean boundaries and efficient communication. This perspective enables developers to diagnose issues across the stack and plan for scalability.
   - Frontend  
