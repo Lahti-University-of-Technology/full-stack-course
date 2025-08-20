@@ -36,42 +36,6 @@ These are example projects of various sorts that might inspire ideas. Not all of
 
 - 404 <https://btmc.substack.com/p/implementing-logic-programming>
 
-- [Introducing Copilot Spaces: A new way to work with code and context](https://github.blog/changelog/2025-05-29-introducing-copilot-spaces-a-new-way-to-work-with-code-and-context/) Announcement of Copilot Spaces, a context hub for grounding Copilot in your code and docs, with sharing across orgs and preview billing details | reading <https://github.blog/changelog/2025-05-29-introducing-copilot-spaces-a-new-way-to-work-with-code-and-context/>
-
-- 404 <https://addyo.substack.com/p/the-prompt-engineering-playbook-for>
-
-- [fast](https://www.catherinejue.com/fast) An essay on why fast software changes behavior and why teams should prioritize latency and simplicity | reading <https://www.catherinejue.com/fast>
-
-- [UI Density](https://matthewstrom.com/writing/ui-density/) A deep dive on defining, measuring, and designing for UI density across visual, information, and temporal dimensions | reading <https://matthewstrom.com/writing/ui-density/>
-
-- [Web Design in 4 minutes](https://jgthms.com/web-design-in-4-minutes/) A step-by-step tutorial that incrementally styles plain HTML with small CSS changes to reach a clean, readable page | reading <https://jgthms.com/web-design-in-4-minutes/>
-
-- [bracket](https://github.com/evroon/bracket) Self-hosted tournament system with a FastAPI backend and Next.js frontend, supports single elimination, round-robin, and swiss formats with a live demo | project <https://github.com/evroon/bracket>
-
-- [SolidJS](https://www.solidjs.com/) Official site for SolidJS, a reactive JavaScript UI library with fine-grained reactivity, compiled JSX, and a small runtime, plus docs and examples | project <https://www.solidjs.com/>
-
-- [Senior Developer Skills in the AI Age: Leveraging Experience for Better Results](https://manuel.kiessling.net/2025/03/31/how-seasoned-developers-can-achieve-great-results-with-ai-coding-agents/) How senior engineers get strong outcomes from AI coding agents using well-structured requirements, tool-based guard rails, and file-based keyframing | reading <https://manuel.kiessling.net/2025/03/31/how-seasoned-developers-can-achieve-great-results-with-ai-coding-agents/>
-
-- [The Frontend Treadmill](https://polotek.net/posts/the-frontend-treadmill/) An essay urging teams to stop chasing framework rewrites and to invest in web platform fundamentals instead | reading <https://polotek.net/posts/the-frontend-treadmill/>
-
-- [Learn the World Map](https://map.koljapluemer.com/#/play) A browser-based map learning game where you practice identifying places on a world map | project <https://map.koljapluemer.com/#/play>
-
-- [Verification-First Development](https://buttondown.com/hillelwayne/archive/verification-first-development/) Newsletter essay proposing verification-first development as a flexible technique, contrasting it with TDD and covering benefits and tradeoffs | reading <https://buttondown.com/hillelwayne/archive/verification-first-development/>
-
-- [API design note: Beware of adding an “Other” enum value](https://devblogs.microsoft.com/oldnewthing/20250217-00/?p=110873) Old New Thing post explaining why an Other enum value harms forward compatibility and advising apps to treat unknown values as Other | reading <https://devblogs.microsoft.com/oldnewthing/20250217-00/?p=110873>
-
-- [Timdle - Daily Timeline Game](https://www.timdle.com/) A daily browser game where you place historical events in chronological order, with options to create custom games | project <https://www.timdle.com/>
-
-- [Two billion people don't have safe drinking water: what does this really mean for them?](https://ourworldindata.org/what-no-safe-water-means) An evidence-based explainer of the WHO/UNICEF drinking water service ladder with real-world impacts and data visuals | reading <https://ourworldindata.org/what-no-safe-water-means>
-
-- [Git Notes: git's coolest, most unloved feature](https://tylercipriani.com/blog/2022/11/19/git-notes-gits-coolest-most-unloved-feature/) A practical guide to git notes with use cases like storing review metadata and commands to add, fetch, and display notes | reading <https://tylercipriani.com/blog/2022/11/19/git-notes-gits-coolest-most-unloved-feature/>
-
-- [Poline: Esoteric Color Palette Generation Library](https://meodai.github.io/poline/) A TypeScript library with an interactive playground for generating palettes from HSL anchor points using position functions; available via npm | project <https://meodai.github.io/poline/>
-
-- [Snouzy/workout-cool](https://github.com/Snouzy/workout-cool) An open source fitness coaching platform built with Next.js and Prisma that lets you plan workouts, track progress, and self-host on PostgreSQL | project <https://github.com/Snouzy/workout-cool>
-
-- 404 <https://btmc.substack.com/p/implementing-logic-programming>
-
 - [Introducing Copilot Spaces: A new way to work with code and context](https://github.blog/changelog/2025-05-29-introducing-copilot-spaces-a-new-way-to-work-with-code-and-context/) GitHub changelog post announcing Copilot Spaces to centralize code, docs, and custom instructions so Copilot is grounded in project context; shareable across orgs | reading <https://github.blog/changelog/2025-05-29-introducing-copilot-spaces-a-new-way-to-work-with-code-and-context/>
 
 - 404 <https://addyo.substack.com/p/the-prompt-engineering-playbook-for>
@@ -112,4 +76,3 @@ These are example projects of various sorts that might inspire ideas. Not all of
 - [Theretowhere](https://theretowhere.com/) Map‑based search tool to find apartments and hotels close to places you care about | project <https://theretowhere.com/>
 
 - [Lynx.Boo](https://lynx.boo/) A minimal link in bio site to create a fast-loading personal links page under /username, editable anytime via /yourusername/edit | project <https://lynx.boo/>
-
