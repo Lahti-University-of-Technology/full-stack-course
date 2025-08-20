@@ -50,6 +50,7 @@
     Services like GitHub Copilot and Tabnine suggest code, tests, and documentation. They accelerate routine tasks, but developers remain responsible for review, correctness, and ethical use.
     - Agentic  
       Experimental tools that plan and execute multi-step tasks (e.g., modifying many files to add a feature). Require strict constraints and human oversight to avoid unintended changes.
+    - AGENTS.md <https://agents.md/>
   - IDEs and development tools
     - VSCode  
       A modern, extensible editor with debugging, terminals, extensions, remote development, and collaborative coding features.
