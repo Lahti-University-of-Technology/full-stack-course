@@ -1,6 +1,6 @@
 # Course Material
 
-- People
+- People  
   People are the users and teammates who interact with software throughout its life cycle. Understanding their goals and constraints guides feature choices and code structure. Empathy turns requirements into user-centered solutions and fosters productive collaboration. Clear communication and respect for future maintainers keep systems healthy.
   - Why we build software: serving real people
     Software exists to solve human problems. Every feature should address a user need. Personas (fictional user types), user stories (narrative feature descriptions), and usability studies help teams stay focused on delivering value.
@@ -12,7 +12,7 @@
     Iterative methodologies such as Scrum, Kanban, and Lean emphasize small batches, rapid delivery, and continuous improvement centered on delivering customer value.
   - Empathy in code, docs, and interface design  
     Inclusive language, accessibility features, and clear documentation ensure that software welcomes a diverse audience and minimizes confusion and frustration.
-- Data
+- Data  
   Data is any observed fact that software stores or processes. It fuels features, analytics, and personalization across the stack. Handling data responsibly ensures accuracy, privacy, and useful insights. Poor data practices can mislead decisions and erode user trust.
   - Collection  
     Gathered through user input, logs, sensors, telemetry, and third-party APIs. Effective collection requires user consent, data validation, and awareness of systemic or sampling bias.
@@ -24,7 +24,7 @@
     Data may reside in memory, be persisted in files, databases, or object stores. Storage choice depends on durability, volume, query patterns, latency, and consistency requirements.
   - Ethics  
     Respect user privacy, obtain informed consent, avoid manipulation, and mitigate biases. Legal frameworks like GDPR and HIPAA guide responsible collection and handling.
-  - Databases
+  - Databases  
     Databases persist and organize data so applications can query and update it efficiently.
     - Early databases
       - Ancient Sumer  
@@ -44,7 +44,7 @@
         Stores high-dimensional embeddings for similarity search and retrieval-augmented generation (e.g., FAISS, Pinecone). Common in AI pipelines.
       - Timeseries  
         Specialized for timestamped data such as metrics, IoT signals, and logs (e.g., InfluxDB, TimescaleDB). Supports time-window queries, retention, and downsampling.
-- Programming Practice
+- Programming Practice  
   Programming practice encompasses the habits and tools developers use to craft and maintain code. Strong practice reduces defects, keeps code readable, and supports collaboration across the stack. In full stack development, these skills allow teams to iterate quickly while preserving quality. Thoughtful tooling and conventions make projects approachable for newcomers.
   - AI-assisted development tools  
     Services like GitHub Copilot and Tabnine suggest code, tests, and documentation. They accelerate routine tasks, but developers remain responsible for review, correctness, and ethical use.
@@ -70,15 +70,15 @@
       - Logic programming (e.g., Prolog): rules and relationships guide inference.  
       - Array languages (e.g., APL, J): vectorized computation over data arrays.  
       - AI-centric (e.g., Lisp): symbolic manipulation and metaprogramming.
-  - Package managers
+  - Package managers  
     Package managers install and track external libraries that applications depend on. They standardize environments so builds are repeatable across machines and deployments. In full stack projects, package managers streamline setup and help avoid dependency conflicts. Tools also surface security and licensing issues early.
-  - Working with the command line
+  - Working with the command line  
     The command line is a text-based interface for controlling a computer. It enables automation, remote management, and efficient execution of developer tools. Mastering shells and scripting streamlines tasks like builds, deployments, and data processing. Familiarity with pipes (`|`) and redirection (`>`, `<`) encourages composing small programs into powerful workflows.
-  - Version control (Git and GitHub)
+  - Version control (Git and GitHub)  
     Version control records changes to code so developers can collaborate and revert with confidence. Git's branching model supports experimentation without risking main code paths. GitHub adds pull requests, issue tracking, and continuous integration hooks that align teams. Using version control rigorously ensures traceability and simplifies code reviews.
-  - Milestones
+  - Milestones  
     Milestones are planned checkpoints that group related work toward a goal. They give teams intermediate targets, enabling feedback and course corrections. In full stack projects, milestones synchronize frontend and backend schedules and communicate progress to stakeholders. Clear milestones help manage scope and maintain momentum.
-- Security
+- Security  
   Security is the discipline of defending software and data against misuse and damage. Full stack applications often handle sensitive information and operate on exposed networks, making security a daily concern. Secure habits protect users, preserve business trust, and reduce costly breaches. Integrating security into development prevents vulnerabilities from reaching production.
   - Principles
     - Confidentiality, Integrity, Availability (CIA triad)  
@@ -118,7 +118,7 @@
       Look for unsafe patterns and dependency risks.
     - Security testing  
       Static analysis (linting), dynamic analysis (DAST), penetration testing, and fuzzing.
-- Testing
+- Testing  
   Testing verifies that code behaves as intended and continues to work as it evolves. Automated suites give developers confidence to refactor and deploy quickly. In full stack systems, tests catch mismatches between layers before they reach users and reduce downtime.
     - Types
       - Unit  
@@ -144,7 +144,7 @@
         Extends TDD by writing tests in natural language scenarios (Given–When–Then). Bridges communication between developers, QA, and stakeholders.
       - Domain-Driven Design (DDD) testing practices  
         Aligns tests with business domains and ubiquitous language. Encourages modeling and testing around domain concepts.
-- Full-stack architecture
+- Full-stack architecture  
   Full-stack architecture describes how client interfaces, server logic, and data storage combine to deliver a complete application. Understanding the responsibilities of each layer helps developers design clean boundaries and efficient communication. This perspective enables developers to diagnose issues across the stack and plan for scalability.
   - Frontend  
     The portion of the application executed in the user’s browser. Responsible for UI rendering, interactivity, and communicating with backends.
@@ -207,7 +207,7 @@
       - GraphQL: flexible client-defined queries.  
       - gRPC: binary protocol for typed RPC over HTTP/2.  
       - WebSockets: full-duplex streams for real-time apps.
-- Hosting and deployment
+- Hosting and deployment  
   Hosting and deployment cover running applications on infrastructure and delivering updates to users. Reliable pipelines ensure software reaches production smoothly and stays available. Full stack developers coordinate builds, servers, and releases to keep features flowing. Automating these steps reduces risk and supports rapid iteration.
   - Continuous Integration (CI)  
     Automatically builds and tests code on each change, catching integration issues early.
