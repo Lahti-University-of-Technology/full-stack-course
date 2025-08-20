@@ -20,10 +20,6 @@ These are example projects of various sorts that might inspire ideas. Not all of
 
 - [Workout.cool](https://github.com/Snouzy/workout-cool) An open source fitness coaching platform that lets you plan workouts, track progress, and import a rich exercise database, with self-hosting guides | project <https://github.com/Snouzy/workout-cool>
 
-- 404 <https://btmc.substack.com/p/implementing-logic-programming>
-
-- 404 <https://addyo.substack.com/p/the-prompt-engineering-playbook-for>
-
 - [Tender](https://trytender.app/) A simple swipe-style web app for viewing photos of your loved ones, like Tinder but only for people you care about | project <https://trytender.app/>
 
 - [Draw a Fish](https://drawafish.com/) A community drawing game where you sketch a fish facing right and watch it swim in a shared global tank, with ranking and personal tanks | project <https://drawafish.com/>
@@ -51,6 +47,7 @@ These are example projects of various sorts that might inspire ideas. Not all of
 - [Theretowhere](https://theretowhere.com/) Map‑based search tool to find apartments and hotels close to places you care about | project <https://theretowhere.com/>
 
 - [Lynx.Boo](https://lynx.boo/) A minimal link in bio site to create a fast-loading personal links page under /username, editable anytime via /yourusername/edit | project <https://lynx.boo/>
+
 
 - [Challenge: XR2000](https://clearsky.dev/blog/xr2000/) Blog post announcing a sci‑fi themed programming challenge with a network service to connect to via netcat | project <https://clearsky.dev/blog/xr2000/>
 
