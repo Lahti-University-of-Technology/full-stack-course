@@ -1,7 +1,8 @@
 # Course Material
 
 - People
-  - Why we build software: serving real people  
+  People are the users and teammates who interact with software throughout its life cycle. Understanding their goals and constraints guides feature choices and code structure. Empathy turns requirements into user-centered solutions and fosters productive collaboration. Clear communication and respect for future maintainers keep systems healthy.
+  - Why we build software: serving real people
     Software exists to solve human problems. Every feature should address a user need. Personas (fictional user types), user stories (narrative feature descriptions), and usability studies help teams stay focused on delivering value.
   - Working with other humans (including future you)  
     Code is read more than it is written. Clear naming, thoughtful comments, and well-scoped tests help teammates—and your future self—understand, maintain, and evolve the system.
@@ -12,7 +13,7 @@
   - Empathy in code, docs, and interface design  
     Inclusive language, accessibility features, and clear documentation ensure that software welcomes a diverse audience and minimizes confusion and frustration.
 - Data
-  Data is anything observed and recorded.
+  Data is any observed fact that software stores or processes. It fuels features, analytics, and personalization across the stack. Handling data responsibly ensures accuracy, privacy, and useful insights. Poor data practices can mislead decisions and erode user trust.
   - Collection  
     Gathered through user input, logs, sensors, telemetry, and third-party APIs. Effective collection requires user consent, data validation, and awareness of systemic or sampling bias.
   - Use  
@@ -24,6 +25,7 @@
   - Ethics  
     Respect user privacy, obtain informed consent, avoid manipulation, and mitigate biases. Legal frameworks like GDPR and HIPAA guide responsible collection and handling.
   - Databases
+    Databases persist and organize data so applications can query and update it efficiently.
     - Early databases
       - Ancient Sumer  
         Clay tablets recorded transactions, trades, and inventories—an early example of structured data collection.
@@ -43,6 +45,7 @@
       - Timeseries  
         Specialized for timestamped data such as metrics, IoT signals, and logs (e.g., InfluxDB, TimescaleDB). Supports time-window queries, retention, and downsampling.
 - Programming Practice
+  Programming practice encompasses the habits and tools developers use to craft and maintain code. Strong practice reduces defects, keeps code readable, and supports collaboration across the stack. In full stack development, these skills allow teams to iterate quickly while preserving quality. Thoughtful tooling and conventions make projects approachable for newcomers.
   - AI-assisted development tools  
     Services like GitHub Copilot and Tabnine suggest code, tests, and documentation. They accelerate routine tasks, but developers remain responsible for review, correctness, and ethical use.
     - Agentic  
@@ -67,6 +70,7 @@
       - Array languages (e.g., APL, J): vectorized computation over data arrays.  
       - AI-centric (e.g., Lisp): symbolic manipulation and metaprogramming.
 - Security
+  Security is the discipline of defending software and data against misuse and damage. Full stack applications often handle sensitive information and operate on exposed networks, making security a daily concern. Secure habits protect users, preserve business trust, and reduce costly breaches. Integrating security into development prevents vulnerabilities from reaching production.
   - Principles
     - Confidentiality, Integrity, Availability (CIA triad)  
       Core goals of security: protect data secrecy, ensure correctness, and maintain system uptime.
@@ -106,6 +110,7 @@
     - Security testing  
       Static analysis (linting), dynamic analysis (DAST), penetration testing, and fuzzing.
 - Testing
+  Testing verifies that code behaves as intended and continues to work as it evolves. Automated suites give developers confidence to refactor and deploy quickly. In full stack systems, tests catch mismatches between layers before they reach users and reduce downtime.
     - Types
       - Unit  
         Tests individual functions or classes in isolation.
@@ -130,15 +135,16 @@
         Extends TDD by writing tests in natural language scenarios (Given–When–Then). Bridges communication between developers, QA, and stakeholders.
       - Domain-Driven Design (DDD) testing practices  
         Aligns tests with business domains and ubiquitous language. Encourages modeling and testing around domain concepts.
-  - Package managers  
-    Automate dependency installation and versioning (e.g., npm, pip, Cargo). Lockfiles ensure reproducibility. Semantic versioning helps avoid breaking changes.
-  - Working with the command line  
-    Shells (bash, zsh) enable scripting, task automation, and remote ops. Pipes (`|`) and redirection (`>`, `<`) combine small tools into powerful workflows.
-  - Version control (Git and GitHub)  
-    Git tracks changes via commits and branches. GitHub adds pull requests, issue tracking, and CI hooks. Enables collaboration, experimentation, and traceability.
-  - Milestones  
-    Planning checkpoints that bundle related work and align deadlines. Anchor project pacing, team focus, and stakeholder expectations.
+- Package managers
+  Package managers install and track external libraries that applications depend on. They standardize environments so builds are repeatable across machines and deployments. In full stack projects, package managers streamline setup and help avoid dependency conflicts. Tools also surface security and licensing issues early.
+- Working with the command line
+  The command line is a text-based interface for controlling a computer. It enables automation, remote management, and efficient execution of developer tools. Mastering shells and scripting streamlines tasks like builds, deployments, and data processing. Familiarity with pipes (`|`) and redirection (`>`, `<`) encourages composing small programs into powerful workflows.
+- Version control (Git and GitHub)
+  Version control records changes to code so developers can collaborate and revert with confidence. Git's branching model supports experimentation without risking main code paths. GitHub adds pull requests, issue tracking, and continuous integration hooks that align teams. Using version control rigorously ensures traceability and simplifies code reviews.
+- Milestones
+  Milestones are planned checkpoints that group related work toward a goal. They give teams intermediate targets, enabling feedback and course corrections. In full stack projects, milestones synchronize frontend and backend schedules and communicate progress to stakeholders. Clear milestones help manage scope and maintain momentum.
 - Full-stack architecture
+  Full-stack architecture describes how client interfaces, server logic, and data storage combine to deliver a complete application. Understanding the responsibilities of each layer helps developers design clean boundaries and efficient communication. This perspective enables developers to diagnose issues across the stack and plan for scalability.
   - Frontend  
     The portion of the application executed in the user’s browser. Responsible for UI rendering, interactivity, and communicating with backends.
     - Browsers
@@ -194,12 +200,14 @@
       - Scalability and concurrency (solving performance and resource management)  
         Horizontal scaling adds instances behind a load balancer. Async patterns (e.g., queues, workers) and serverless platforms handle bursty traffic.
   - Communication between Frontend and Backend
+    Defines how clients and servers exchange data to fulfill requests.
     - Protocols  
       - REST: resource-oriented, uses standard HTTP verbs.  
       - GraphQL: flexible client-defined queries.  
       - gRPC: binary protocol for typed RPC over HTTP/2.  
       - WebSockets: full-duplex streams for real-time apps.
 - Hosting and deployment
+  Hosting and deployment cover running applications on infrastructure and delivering updates to users. Reliable pipelines ensure software reaches production smoothly and stays available. Full stack developers coordinate builds, servers, and releases to keep features flowing. Automating these steps reduces risk and supports rapid iteration.
   - Continuous Integration (CI)  
     Automatically builds and tests code on each change, catching integration issues early.
   - Continuous Development (CD)  
