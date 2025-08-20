@@ -21,3 +21,7 @@
 - [Beej's Guide to Git](https://beej.us/guide/bggit/) A comprehensive Git guide in HTML and PDF with practical explanations and command examples | reading <https://beej.us/guide/bggit/>
 
 - [Good software development habits](https://zarar.dev/good-software-development-habits/) A post outlining ten habits for faster, higher‑quality work like tiny commits, frequent deploys, continuous refactoring, and testable design | reading <https://zarar.dev/good-software-development-habits/>
+
+- 404 <https://btmc.substack.com/p/implementing-logic-programming>
+
+- 404 <https://addyo.substack.com/p/the-prompt-engineering-playbook-for>
