@@ -11,7 +11,6 @@
     Iterative methodologies such as Scrum, Kanban, and Lean emphasize small batches, rapid delivery, and continuous improvement centered on delivering customer value.
   - Empathy in code, docs, and interface design  
     Inclusive language, accessibility features, and clear documentation ensure that software welcomes a diverse audience and minimizes confusion and frustration.
-
 - Data
   - Definition  
     Data is recorded information—numbers, text, images, signals—that represents facts or observations. It becomes valuable when interpreted or transformed into insights, decisions, or product features.
@@ -44,7 +43,6 @@
         Stores high-dimensional embeddings for similarity search and retrieval-augmented generation (e.g., FAISS, Pinecone). Common in AI pipelines.
       - Timeseries  
         Specialized for timestamped data such as metrics, IoT signals, and logs (e.g., InfluxDB, TimescaleDB). Supports time-window queries, retention, and downsampling.
-
 - Programming Practice
   - AI-assisted development tools  
     Services like GitHub Copilot and Tabnine suggest code, tests, and documentation. They accelerate routine tasks, but developers remain responsible for review, correctness, and ethical use.
@@ -102,7 +100,6 @@
     Git tracks changes via commits and branches. GitHub adds pull requests, issue tracking, and CI hooks. Enables collaboration, experimentation, and traceability.
   - Milestones  
     Planning checkpoints that bundle related work and align deadlines. Anchor project pacing, team focus, and stakeholder expectations.
-
 - Full-stack architecture
   - Frontend  
     The portion of the application executed in the user’s browser. Responsible for UI rendering, interactivity, and communicating with backends.
@@ -158,75 +155,12 @@
     - Cloud
       - Scalability and concurrency (solving performance and resource management)  
         Horizontal scaling adds instances behind a load balancer. Async patterns (e.g., queues, workers) and serverless platforms handle bursty traffic.
-
   - Communication between Frontend and Backend
     - Protocols  
       - REST: resource-oriented, uses standard HTTP verbs.  
       - GraphQL: flexible client-defined queries.  
       - gRPC: binary protocol for typed RPC over HTTP/2.  
       - WebSockets: full-duplex streams for real-time apps.
-
-- Hosting and deployment
-  - Continuous Integration (CI)  
-    Every commit triggers builds and tests, catching regressions early. Tools: GitHub Actions, GitLab CI, CircleCI.
-  - Continuous Development (CD)  
-    Continuous Delivery: always-ready-to-ship builds.  
-    Continuous Deployment: auto-release to staging/production. Reduces friction and encourages small, frequent updates.      - Separation of concerns
-        - HyperText Markup Language (HTML)
-          - content  
-            Provides semantic structure; tags like `<article>` or `<nav>` convey meaning to browsers and assistive technologies.
-        - Cascading Style Sheets (CSS)
-          - presentation  
-            Controls layout, colors, and typography through selectors and cascading rules.
-        - JavaScript
-          - interactivity  
-            Adds dynamic behavior—DOM manipulation, event handling, and network requests.
-    - Frameworks  
-      *Frontend frameworks* are semantic abstractions that render user interfaces into the core technologies browsers understand: HTML, CSS, and JavaScript. The abstraction is *semantic* because the code expresses meaning (a button, a list, a stateful component) rather than mechanical instructions for DOM mutation. Instead of imperative code like `document.createElement("button")`, you write a component `<Button>Click me</Button>` or `button { label: "Click me" }`.
-      - Component frameworks (e.g., React, Svelte)
-        - React
-          - Provides a virtual DOM representation of the UI.
-          - Component functions return virtual nodes (JS objects).
-          - On state changes, React diffs the new virtual tree against the old and applies the minimal set of DOM mutations.
-          - JSX compiles to React.createElement calls, which build the virtual DOM objects.
-        - Svelte
-          - No virtual DOM.
-          - Compiler runs at build-time: your components are converted into minimal imperative JavaScript that directly manipulates the DOM.
-          - Reactive statements ($:) are compiled into update functions.
-          - Runtime overhead is very small since most work happens during compilation.
-    - User experience design (UXD)  
-      Crafting interfaces that are intuitive and efficient through research, prototyping, and iteration.
-      - Accessibility and usability (a11y)  
-        Ensures people with disabilities can perceive, navigate, and interact—using semantic HTML, ARIA roles, and keyboard support.
-      - Internationalization (i18n)  
-        Designing for multiple languages, locales, and writing directions; extract strings and format dates, numbers, and currencies appropriately.
-    - Styling and layout systems (CSS, Tailwind, etc.)  
-      Utility-first frameworks and design systems provide consistent, responsive styling; CSS Grid and Flexbox enable advanced layouts.
-    - Frontend build tools and bundlers  
-      Tools like Webpack, Vite, and Parcel transpile modern syntax, optimize assets, and bundle modules for efficient delivery.
-    - State management  
-      Techniques for handling application data over time, from local component state to centralized stores (Redux, Zustand). Predictable state flows ease debugging and testing.
-  - Backend  
-    Server-side logic that processes requests, enforces business rules, and interfaces with data stores.
-    - What is a server?
-      - Receiving requests (request lifecycle, ports, sockets, protocols)  
-        Servers listen on ports, parse protocols like HTTP, and dispatch requests through middleware or handlers.
-      - Sending responses (status codes, headers, payloads)  
-        Responses include metadata (headers), status codes indicating outcome, and bodies containing HTML, JSON, or binary data.
-      - Sockets and connections (TCP/IP basics, HTTP, WebSockets)  
-        TCP provides reliable byte streams; HTTP is stateless atop TCP; WebSockets upgrade connections for bidirectional communication.
-    - Server frameworks (introduced as abstractions solving repetitive boilerplate)  
-      Frameworks such as Express, Django, and Spring supply routing, middleware, and templating, allowing focus on domain logic.
-    - Authentication and sessions (solving the problem of state over stateless HTTP)  
-      Techniques like cookies, tokens, OAuth, and session stores maintain user identity and context across requests.
-    - Data access (solving structured persistence and query problems)  
-      ORMs and query builders (Sequelize, Prisma) abstract database interactions, enforce schemas, and handle migrations.
-    - Cloud
-      - Scalability and concurrency (solving performance and resource management)  
-        Horizontal scaling replicates services behind load balancers; asynchronous I/O and worker queues maximize throughput.
-  - Communication between Frontend and Backend
-    - Protocols  
-      REST uses resource-oriented endpoints; GraphQL provides flexible queries; gRPC and WebSockets enable streaming and low-latency interactions.
 - Hosting and deployment
   - Continuous Integration (CI)  
     Automatically builds and tests code on each change, catching integration issues early.
