@@ -155,7 +155,7 @@ Collaboration is encouraged. Software is not built in isolation, and you will le
 ### Allowed
 
 - Talking through ideas, debugging, and design decisions.  
-- Pairing briefly to get unstuck, even if your peer types the code.  
+- Pairing for learning or help, even if your peer types the code.  
 - Watching how someone else solves a problem to learn the approach.  
 - Sharing resources, tutorials, or references.  
 - Giving feedback on each other’s code or deployments.  
