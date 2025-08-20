@@ -17,33 +17,7 @@ These are example projects of various sorts that might inspire ideas. Not all of
 - [Embit - Signals from Technosphere](https://embit.ca/) A minimalist tech news and link aggregator with a curated “of interest” feed and tag cloud | reading <https://embit.ca/>
 
 - 404 <https://trickle.so/apps/colorfind>
-
-- [Challenge: XR2000](https://clearsky.dev/blog/xr2000/) A blog post launching a programming challenge with a sci‑fi backstory that starts via `nc clearsky.dev 29438`, focusing on binary protocols and light cryptography | reading <https://clearsky.dev/blog/xr2000/>
-
-- [A gentle introduction to anchor positioning](https://webkit.org/blog/17240/a-gentle-introduction-to-anchor-positioning/) A WebKit post that explains CSS anchor positioning with `position-area`, `position-try`, and `anchor()` examples for menus and tooltips | reading <https://webkit.org/blog/17240/a-gentle-introduction-to-anchor-positioning/>
-
-- [My AI Code Prep & Cline Workflow for Budget Coding/Debugging (Part 1)](https://wuu73.org/blog/aiguide1.html) A practical guide to a low-cost AI coding workflow using free web chat models plus a GUI tool to curate project context for agents like Cline | reading <https://wuu73.org/blog/aiguide1.html>
-
-- [No, AI is not Making Engineers 10x as Productive](https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/) An essay arguing against 10x AI productivity claims, analyzing real-world bottlenecks and where AI helps in moderation | reading <https://colton.dev/blog/curing-your-ai-10x-engineer-imposter-syndrome/>
-
-- [The HTML Hobbyist](https://www.htmlhobbyist.com/) A beginner-friendly site that advocates simple hand-coded websites and walks through getting a one‑page site online | reading <https://www.htmlhobbyist.com/>
-
-- [Six Principles for Production AI Agents](https://www.app.build/blog/six-principles-production-ai-agents) A practical guide to building production AI agents, covering system prompts, context management, careful tool design, feedback loops, and error analysis | reading <https://www.app.build/blog/six-principles-production-ai-agents>
-
-- [On Designing For Children](https://shaneosullivan.wordpress.com/2025/07/28/on-designing-for-children/) Lessons from building a tablet art app for kids, including minimizing text, co-locating tools, easy undo, handling palm rejection, and age-appropriate monetization | reading <https://shaneosullivan.wordpress.com/2025/07/28/on-designing-for-children/>
-
-- [Stalking the Statistically Improbable Restaurant… With Data!](https://ethanzuckerman.com/2025/07/03/stalking-the-statistically-improbable-restaurant-with-data/) A data analysis piece using the Google Places API to profile cuisines across 340 US cities and surface unlikely restaurants that reflect local communities | reading <https://ethanzuckerman.com/2025/07/03/stalking-the-statistically-improbable-restaurant-with-data/>
-
-- [The New Skill in AI is Not Prompting, It's Context Engineering](https://www.philschmid.de/context-engineering) An overview arguing that effective agents depend on context engineering, defining context components and contrasting cheap demos with richer, tool- and data-aware setups | reading <https://www.philschmid.de/context-engineering>
-
-- [AI API Walkthroughs](https://www.clarkduvall.com/ai/walkthrough.html#prompt-api) Interactive walkthrough with code samples for Chrome’s on‑device LLM Prompt API, Translator, Language Detector, and Summarizer APIs in the browser | reading <https://www.clarkduvall.com/ai/walkthrough.html#prompt-api>
-- [Rubik’s Cube 2D](https://claire-bomb.itch.io/rubiks-cube-2d) A playable 2D Rubik’s Cube puzzle built with Godot for web and Android | project <https://claire-bomb.itch.io/rubiks-cube-2d>
-- [Y Combinator Portfolio Constellation](https://starwatcher.ai/constellations/yc-portfolio) An interactive constellation that maps YC startups to reveal similarity neighborhoods across the ecosystem | project <https://starwatcher.ai/constellations/yc-portfolio>
-- [USDA‑Verified Nutrition API](https://nutrition.avocavo.app/) Developer API that turns free‑form food text into USDA‑verified nutrition data with FDC IDs and clean JSON; SDKs and CLI available | project <https://nutrition.avocavo.app/>
-- [Babami.App - Grandma Reader](https://www.babami.app/) Web app that mirrors typed or dictated text in a large adjustable display to assist people with hearing loss, including cross‑device sessions | project <https://www.babami.app/>
-- [Mechaverse](https://mechaverse.dev/) Open source Next.js and Three.js viewer that renders URDF, MJCF, and OpenUSD robot models directly in the browser | project <https://mechaverse.dev/>
-- [Embit - Signals from Technosphere](https://embit.ca/) Curated tech news aggregator with link feeds and interactive tag cloud | reading <https://embit.ca/>
-- 404 <https://trickle.so/apps/colorfind>
+  
 - [Challenge: XR2000](https://clearsky.dev/blog/xr2000/) Blog post announcing a sci‑fi themed programming challenge with a network service to connect to via netcat | reading <https://clearsky.dev/blog/xr2000/>
 - [A gentle introduction to anchor positioning](https://webkit.org/blog/17240/a-gentle-introduction-to-anchor-positioning/) WebKit post that explains CSS anchor positioning for menus and tooltips with practical examples | reading <https://webkit.org/blog/17240/a-gentle-introduction-to-anchor-positioning/>
 - [My AI Code Prep & Cline Workflow for Budget Coding/Debugging (Part 1)](https://wuu73.org/blog/aiguide1.html) Guide to low‑cost AI‑assisted coding, browser setup, and a workflow using AI Code Prep with tools like Cline and Gemini | reading <https://wuu73.org/blog/aiguide1.html>
@@ -138,3 +112,4 @@ These are example projects of various sorts that might inspire ideas. Not all of
 - [Theretowhere](https://theretowhere.com/) Map‑based search tool to find apartments and hotels close to places you care about | project <https://theretowhere.com/>
 
 - [Lynx.Boo](https://lynx.boo/) A minimal link in bio site to create a fast-loading personal links page under /username, editable anytime via /yourusername/edit | project <https://lynx.boo/>
+
