@@ -10,7 +10,7 @@ This document sets out the expectations for conduct in this course and the conse
 4. All data is handled responsibly.
 5. You can explain every line you submit.
 
-If this is clear and obvious to you, this document probably does not apply to you.
+If this is clear and obvious to you, you might be able to skim the rest. 
 
 ## Positive expectations
 
@@ -30,7 +30,8 @@ It is far better to fail by lack of work than to fail by cheating. Any one of th
 - Copying code or text without attribution.
 - Contract cheating. Someone else writes any part of your deliverable.
 - Fabricated data, logs, benchmarks, user tests, or demonstrations.
-- Hiding work in private repositories to avoid review when public work is required.
+- Hiding work in private repositories to avoid review. Public work is required.
+- Not committing and pushing to GitHub to avoid review. Public work is required.
 - Tampering with commit history to misrepresent timeline or authorship.
 - A code walkthrough you cannot pass. If you cannot explain your own submission, it is not yours.
 - Large, polished commit dumps,
