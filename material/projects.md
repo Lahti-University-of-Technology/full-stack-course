@@ -26,8 +26,6 @@ These are example projects of various sorts that might inspire ideas. Not all of
 
 - [Unsure Calculator](https://filiph.github.io/unsure/) An uncertainty-aware calculator that lets you compute with ranges using the ~ notation and see distributions and percentiles | project <https://filiph.github.io/unsure/>
 
-- [Every HTML Element](https://iamwillwang.com/dollar/every-html-element/) A single web page that uses nearly every HTML element with live examples for forms, media, tables, and a native dialog | project <https://iamwillwang.com/dollar/every-html-element/>
-
 - [Horizon](https://github.com/dnlzro/horizon) Renders the current sky at your approximate location as a CSS gradient, server‑rendered with Astro and no client JavaScript | project <https://github.com/dnlzro/horizon>
 
 - [Atlas of Space](https://atlasof.space/) Interactive 3D visualization of Solar System objects with search, zoom, pan, and click for details | project <https://atlasof.space/>

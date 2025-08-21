@@ -10,6 +10,8 @@
 
 - [The HTML Hobbyist](https://www.htmlhobbyist.com/) Instructional site that teaches hand‑coded HTML and shows how to publish a simple site, including a one‑page starter | reading <https://www.htmlhobbyist.com/>
 
+- [Every HTML Element](https://iamwillwang.com/dollar/every-html-element/) A single web page that uses nearly every HTML element with live examples for forms, media, tables, and a native dialog | reading <https://iamwillwang.com/dollar/every-html-element/>
+
 - [Two billion people don't have safe drinking water: what does this really mean for them?](https://ourworldindata.org/what-no-safe-water-means) An Our World in Data explainer that defines levels of drinking water access and shows how lack of safe water affects time, health, and daily life | reading <https://ourworldindata.org/what-no-safe-water-means>
 
 - [Git Notes: git's coolest, most unloved feature](https://tylercipriani.com/blog/2022/11/19/git-notes-gits-coolest-most-unloved-feature/) A practical guide to git notes with commands, real use cases like code review metadata, and limitations | reading <https://tylercipriani.com/blog/2022/11/19/git-notes-gits-coolest-most-unloved-feature/>
