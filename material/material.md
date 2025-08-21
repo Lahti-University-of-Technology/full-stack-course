@@ -126,9 +126,21 @@
 - Testing  
   Testing verifies that code behaves as intended.  
   - [Google Testing Blog](https://testing.googleblog.com/) Real-world practices. [Free][I–A]  
-  - [Cypress Docs](https://docs.cypress.io/) Browser E2E testing. [Free][B–I]  
-  - [Playwright Docs](https://playwright.dev/) Cross-browser testing. [Free][B–I]  
-  - [Martin Fowler: Test Doubles](https://martinfowler.com/bliki/TestDouble.html) Core concepts. [Free][I]  
+  - [Cypress Docs](https://docs.cypress.io/) Browser E2E testing. [Free][B–I]
+  - [Playwright Docs](https://playwright.dev/) Cross-browser testing. [Free][B–I]
+  - [Martin Fowler: Test Doubles](https://martinfowler.com/bliki/TestDouble.html) Core concepts. [Free][I]
+  - Performance testing
+    Measures an application's speed and responsiveness under load.
+    - [WebPageTest Docs](https://docs.webpagetest.org/) Tools for benchmarking web speed. [Free][B–I]
+    - [Google Web Vitals](https://web.dev/vitals/) Key metrics for fast sites. [Free][B–I]
+  - Accessibility testing
+    Verifies that interfaces work for people with disabilities and meet standards like WCAG.
+    - [W3C WAI: Evaluate Accessibility](https://www.w3.org/WAI/test-evaluate/) Techniques and tools. [Free][B–I]
+    - [Deque axe DevTools](https://www.deque.com/axe/devtools/) Automated accessibility audits. [Free][B–I]
+  - Usability testing
+    Observes real users to discover UX issues and improve ease of use.
+    - [Nielsen Norman Group: Usability Testing 101](https://www.nngroup.com/articles/usability-testing-101/) Overview and best practices. [Free][B]
+    - [Usability.gov: Conducting Usability Testing](https://www.usability.gov/how-to-and-tools/methods/usability-testing.html) Step-by-step guide. [Free][B]
 
 - Full-stack architecture  
   Full-stack architecture describes how client interfaces, server logic, and data storage combine.  
