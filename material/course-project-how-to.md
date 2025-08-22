@@ -220,7 +220,7 @@ Using Netlify functions as REST resource endpoints, begin accepting requests fro
 
 ---
 
-## Week 46 and 48: Minimum Viable Product (MVP) completed  
+## Week 46-48: Minimum Viable Product (MVP) completed  
 
 Congratulations! This is what you have been working towards.  
 
