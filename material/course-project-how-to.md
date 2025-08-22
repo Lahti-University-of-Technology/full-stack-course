@@ -21,33 +21,33 @@ Each phase occurs over a period of time, concurrent with other phases. You won't
 
 ## Week 36 and 37: Conceive the project  
 
-All successful projects start with an idea.  
+All projects start with an idea. The best start with 99 ideas. 
 
 - Look around at projects of similar scope.  
   - What makes them successful? Where do they fall short?  
-- Brainstorm several possible ideas of your own. Don’t judge them yet.  
-- Talk with classmates, friends, or potential users. Listen carefully.  
+- Brainstorm on your own. Brainstorm with classmates. Brainstorm with AI.
+  - Generate 20 absurd, dumb, ridiculous, weird, strange, impractical ideas.  ideas.
+  - Hear from your classmates 200 weird, strange, impractical ideas.
+  - Don't judge. Be creative. Just write them all down. 
+- Talk with classmates, friends, or potential users about these ideas.
+  - Listen carefully. If they laugh, that might be a good idea. 
 - Try short interviews with potential users — ask about their problems without pitching your plan.  
-- From your list, narrow down to one idea. This is your project.  
+- From your list, narrow down to one idea.   
   - Refine it. Iterate.  
-  - Ask for feedback (from me, from peers, from strangers if possible).  
+  - Ask for feedback (from me, from peers, from strangers if possible).
+  - When it is a single, well-defined purpose that hopefully delights you and your classmates,
+  - ... this is your project. 
 
-- [ ] Submit related assignments  
+- [ ] Submit all of your ideas, as well you a paragraph or two about why you choose the one you did.
+- [ ] You will need my approval for this idea. 
 
 ---
 
-## Week 36–38: Describe and document the project  
+## Week 36–38: Describe the project  
 
 A good description keeps development oriented and focused. Start by clarifying the big picture.  
 
-- Add a **Vision Statement** as the first section of your README:  
-  - What problem does the project solve?  
-  - Who is it for?  
-  - What is the single, well-defined purpose?  
-  - What is *not* in scope (non-goals)?  
-  - Write it in plain, straightforward words.  
-
-- Expand the README to also explain your project in simple, declarative language.  
+- Create a README file in the root directory of your project.
   - Name the project.  
   - Describe it clearly and directly.  
     - Avoid marketing speak or buzzwords.  
@@ -55,15 +55,18 @@ A good description keeps development oriented and focused. Start by clarifying t
       - ☒ “This application will help users identify animals.”  
       - ☑ “This application helps users identify animals.”
 
-- Your README should answer:  
-  - What does the application do?  
-  - What is its single, well-defined purpose?  
-  - Who is it for?  
-  - If it is similar to other projects, how is it different?  
-  - How to set up and run the project (setup instructions can be a placeholder for now).  
+- Your description should explain in simple, straightforward, declarative language:  
+  - What does the application do?
+  - What is its single, well-defined purpose?
+  - What problem does the project solve, if any?   
+  - Who is it for?
+  - What is *not* in scope (non-goals)? 
+  - If it is similar to other projects, how is it different?
+ 
+This description is often called a *Vision Statement*
 
 **Submission**  
-- [ ] Submit your README URL (the README must start with a Vision Statement)
+- [ ] Submit your README URL
 
 ---
 
@@ -100,7 +103,6 @@ Every application moves and shapes data. At this stage, focus on **how data flow
 
 **Submission**  
 - [ ] Add your diagrams (images or PDF) to `/docs/DATA_MODEL.md` with a short description.  
-- This artifact will not be graded separately, but it strengthens the overall evaluation of your project.  
 
 ---
 
@@ -110,15 +112,14 @@ Now move from thinking about *data* to thinking about the *system as a whole*. A
 
 - Create a **Context Diagram**: show your app as a box, with users and any external systems (like APIs) around it, and arrows for interactions.  
 - Create a **Container Diagram**: break your app into its main pieces (frontend/client, backend/API, database, external services). Show how they connect.  
-- List the **Resources and Operations (CRUD)** your app will need. For example: *Tasks → create, read, update, delete*.  
+- List the **Resources and Operations (CRUD)** your app will need. For example: *Tasks → create, read, update, delete*. 
 - (Optional) Create a **Sequence Diagram** for one core use case (e.g. user logs in, backend checks DB, returns session).  
 - (Optional) Create a **Component Diagram** for one container (like your backend). Show the main modules or components and how they depend on each other.  
 - Keep diagrams simple: boxes and arrows, hand-drawn or digital, with short labels.  
 
 **Submission**  
 - [ ] Add your diagrams and notes to `/docs/ARCHITECTURE.md`  
-- These artifacts are not graded separately, but they strengthen the overall evaluation of your project.  
-
+  
 **Glossary (plain language)**  
 - **Context Diagram**: Big-picture view. Shows your app, the users, and outside systems, and how they connect.  
 - **Container Diagram**: Shows the main pieces inside your app (like frontend, backend, database) and how they talk to each other.  
@@ -135,7 +136,7 @@ Now move from thinking about *data* to thinking about the *system as a whole*. A
   - Decide how actions should look (delete with a trash icon? confirm with a dialog?).  
   - Think about how pages, panels, and buttons are organized.  
   - Identify different application *states*: login, loading, error, success.  
-- Tools: paper, whiteboard, Figma — whatever lets you move quickly.  
+- Tools: paper, whiteboard, Figma, <https://wireframe.cc> — whatever lets you move quickly.  
 - Focus on structure, not polish. Treat the wireframe as a visual map of how your app works.  
 - Mark components that share data, that change state, or that depend on responses from the server.  
 
