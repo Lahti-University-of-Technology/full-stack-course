@@ -14,13 +14,20 @@ The goal is for you to **own a complete stack**: frontend, backend, database, an
 
 ## Constraints
 
+- **Scope**
+  - It must have **one clear, defined purpose**.
+  - Non-trivial. It cannot be a toy or simplistic.
+  - Original concept. It cannot be a duplicate or clone of existing projects.
+    - Creative, whimsical, or bold ideas are encouraged.
+  - Minimum Viable Product (MVP)
 - **Architecture**
   - Must be a full-stack application with a clear client and server.
   - Deployment and source code must be public on GitHub.
   - Must use this stack (alternatives only if justified and approved):
     - Backend must use **Node.js** (JavaScript or TypeScript).
-    - Frontend must use **Svelte** or **SvelteKit**
+    - Frontend must use **SvelteKit**
     - **Netlify** for serverless hosting
+    - Database can be **Supabase** or **MongoDB**
   - Most projects will also need
     - *REST* API
     - Cloud-based, hosted database
@@ -32,10 +39,6 @@ The goal is for you to **own a complete stack**: frontend, backend, database, an
     - Show your progress! No “big bang” commits. Commit regularly and incrementally.
     - No deleting or replacing repositories or changing them to private.
     - A sudden appearance of a finished project will fail the course.
-- **Originality**
-  - Project must not be trivial or a clone (e.g. no generic e-commerce, no blog engines).
-  - It must have **one clear, defined purpose**.
-  - Creative, whimsical, or bold ideas are encouraged.
 - **Documentation**
   - A clear `README.md` is required, explaining purpose, setup, and usage.
 - **Ethics**: be familiar with the course [ethical obligations](../notes/ethics.md)
@@ -50,6 +53,13 @@ The goal is for you to **own a complete stack**: frontend, backend, database, an
 - Ambition and innovation.
 - Documentation and presentation quality.
 - Evidence of steady, ethical progress.
+
+## Minimum Viable Product (MVP)
+  - The smallest complete version of your application that fulfills its stated purpose.
+  - It must allow a user to experience the core value of your idea through a basic but functional user flow.
+    - Example: if your project is a recipe-sharing platform, the MVP is being able to create an account, post one recipe, and have another user view it.
+  - MVP is not a prototype or mockup: it must run, be deployed, and demonstrate the main functionality live.
+  - Nice-to-have features (styling, edge cases, advanced options) can come later, but the MVP proves the app “does the thing it claims to do.”
 
 ## Milestones
 
