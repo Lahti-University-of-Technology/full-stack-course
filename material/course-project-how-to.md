@@ -8,19 +8,20 @@ Each phase occurs over a period of time, concurrent with other phases. You won't
 
 ---
 
-## Week 37: Basic platform setup  
+## Week 36: Basic platform setup  
 
 - Set up your development platform and boilerplate project.  
 - Make sure your GitHub repo and Netlify deployment are working from day one, even if the app is just “Hello World.”  
-- Early deployment avoids surprises later.
-- [] submit the project repository
-- [] submit the working production URL
+- Early deployment avoids surprises later.  
+
+- [ ] Submit the project repository  
+- [ ] Submit the working production URL  
 
 ---
 
-## Week 37 and 38: Conceive the project
+## Week 36 and 37: Conceive the project  
 
-All successful projects start with an idea.
+All successful projects start with an idea.  
 
 - Look around at projects of similar scope.  
   - What makes them successful? Where do they fall short?  
@@ -30,90 +31,104 @@ All successful projects start with an idea.
 - From your list, narrow down to one idea. This is your project.  
   - Refine it. Iterate.  
   - Ask for feedback (from me, from peers, from strangers if possible).  
-- [] Submit related assignments
+
+- [ ] Submit related assignments  
 
 ---
 
-## Week 37–39: Describe and document the project  
+## Week 36–38: Describe and document the project  
 
-A good description keeps development oriented and focused.
+A good description keeps development oriented and focused. Start by clarifying the big picture.  
 
-- Create a README in your project repo that explains your project in simple, declarative language.  
+- Add a **Vision Statement** as the first section of your README:  
+  - What problem does the project solve?  
+  - Who is it for?  
+  - What is the single, well-defined purpose?  
+  - What is *not* in scope (non-goals)?  
+  - Write it in plain, straightforward words.  
+
+- Expand the README to also explain your project in simple, declarative language.  
   - Name the project.  
   - Describe it clearly and directly.  
     - Avoid marketing speak or buzzwords.  
     - Use the present tense.  
       - ☒ “This application will help users identify animals.”  
-      - ☑ “This application helps users identify animals.”  
+      - ☑ “This application helps users identify animals.”
+
 - Your README should answer:  
   - What does the application do?  
   - What is its single, well-defined purpose?  
   - Who is it for?  
   - If it is similar to other projects, how is it different?  
+  - How to set up and run the project (setup instructions can be a placeholder for now).  
 
-- [] Submit your README URL
+**Submission**  
+- [ ] Submit your README URL (the README must start with a Vision Statement)
 
 ---
 
-## Week 37-40: Design the User Experience  
+## Week 36–39: Design the User Experience  
 
-All applications are an *experience* of some sort for their users. What sort of experience will your users have? Successful projects center the user's needs.
+All applications are an *experience* of some sort for their users. What sort of experience will your users have? Successful projects center the user's needs.  
 
 - Think about how users will achieve the main purpose of the software.  
 - Start with paper and pencil: draw wireframes, arrows, and flows.  
-  - Eventually, you might use tools like <https://draw.io> or <https://excalidraw.com>
+  - Eventually, you might use tools like <https://draw.io> or <https://excalidraw.com>  
 - Make a paper mockup. Ask potential users to perform specific tasks with it. Observe, note problems, and ask about their experience.  
-- Sketch the UX flow. Add these sketches to your documentation.
-- Describe the User Experience for your app clearly and directly.
+- Sketch the UX flow. Add these sketches to your documentation.  
+- Describe the User Experience for your app clearly and directly.  
   - Avoid marketing speak or buzzwords.  
   - Use the present tense.  
     - ☒ “This application will help users identify animals.”  
     - ☑ “This application helps users identify animals.”  
 
-- [] Create a UXD.md document in a `/docs` folder, include linked images, and submit its GitHub URL.
-- [] Submit its GitHub URL.
+- [ ] Create a `UXD.md` document in a `/docs` folder, include linked images, and submit its GitHub URL  
 
 ---
 
-## Week 38-40: Data Model draft
+## Week 37–39: Data Model draft  
 
-In some sense, all applications manipulate and present *data*, and that is all they do. If you think deeply about how data flow and manipulation happens in your project, then downstream technical decisions become easier.
+Every application moves and shapes data. At this stage, focus on **how data flows through your app** and, if useful, how it is stored. This will make later design and coding decisions clearer.  
 
-- Imagine how data flows through your application, from input to storage to presentation.  
-- There is no single “correct” answer — this is about exploring possibilities.  
-- Ask:  
-  - What is the main data your app creates or uses? (e.g. cities, pictures, scores)  
-  - Where does the data come from? (user input, APIs, uploads, etc.)  
-  - How is the data displayed to the user?  
-  - What operations need to happen: filtering, sorting, updating, deleting?  
-  - Does the data need to be stored? How much? How secure?  
-- Draw diagrams to show your thinking. Label arrows and flows.  
+- Think about the **flow of data** in your application. For example:  
+  - A user enters data in the UI → request goes to server → server transforms or checks it → data is stored → later retrieved → displayed back to the user.  
+- Create a **Data Flow Diagram (DFD)** to illustrate these steps. Use boxes, arrows, and labels to make it understandable. Hand-drawn or digital is fine.  
+- If your project uses a relational database, also make an **Entity Relationship Diagram (ERD)** to show the main entities (tables), their attributes (columns), and relationships. If not, you can skip the ERD.  
+- Keep the diagrams simple. They are drafts to show your current thinking, not final truth.  
 - Use your UX sketches as a guide, and refine them as you go.  
-- Talk through your ideas with others and adjust.
+- Talk through your diagrams with others and adjust.  
 
-- [] Create and upload to your repo a `/docs/DATA_MODEL.md` file.
-- [] Submit its GitHub URL.
-
----
-
-## Week 39-41: Architecture document  
-
-- Move from data to “behind the scenes” design.  
-- Ask yourself:  
-  - Does the app need search or filtering?  
-  - Will users modify or update data?  
-  - Should the data persist when users return later?  
-  - Do CRUD operations apply?  
-  - Where do these operations run — client, server, or both?  
-  - Does the project fit a REST style? If so, what are its *resources*?  
-- Write this down as your first architecture draft.  
-
-- [] Create and upload `/docs/ARCHITECTURE.md`
-- [] Submit its GitHub URL.
+**Submission**  
+- [ ] Add your diagrams (images or PDF) to `/docs/DATA_MODEL.md` with a short description.  
+- This artifact will not be graded separately, but it strengthens the overall evaluation of your project.  
 
 ---
 
-## Week 39-41: UI wireframe  
+## Week 38–40: Architecture document  
+
+Now move from thinking about *data* to thinking about the *system as a whole*. Architecture describes the **big pieces** of your application, how they connect, and how users and data flow through them.  
+
+- Create a **Context Diagram**: show your app as a box, with users and any external systems (like APIs) around it, and arrows for interactions.  
+- Create a **Container Diagram**: break your app into its main pieces (frontend/client, backend/API, database, external services). Show how they connect.  
+- List the **Resources and Operations (CRUD)** your app will need. For example: *Tasks → create, read, update, delete*.  
+- (Optional) Create a **Sequence Diagram** for one core use case (e.g. user logs in, backend checks DB, returns session).  
+- (Optional) Create a **Component Diagram** for one container (like your backend). Show the main modules or components and how they depend on each other.  
+- Keep diagrams simple: boxes and arrows, hand-drawn or digital, with short labels.  
+
+**Submission**  
+- [ ] Add your diagrams and notes to `/docs/ARCHITECTURE.md`  
+- These artifacts are not graded separately, but they strengthen the overall evaluation of your project.  
+
+**Glossary (plain language)**  
+- **Context Diagram**: Big-picture view. Shows your app, the users, and outside systems, and how they connect.  
+- **Container Diagram**: Shows the main pieces inside your app (like frontend, backend, database) and how they talk to each other.  
+- **Component Diagram**: Shows how one piece (like the backend) is broken down into smaller modules.  
+- **Sequence Diagram**: Shows the order of steps in a single use case, like a timeline of messages between user, frontend, backend, and database.  
+- **CRUD**: Create, Read, Update, Delete — the four basic operations you can do with stored data.  
+
+---
+
+## Week 38–40: UI wireframe  
 
 - Now return to the presentation layer. This is how users interact with the data and operations you’ve defined.  
 - Using your UX work as a foundation:  
@@ -124,14 +139,14 @@ In some sense, all applications manipulate and present *data*, and that is all t
 - Focus on structure, not polish. Treat the wireframe as a visual map of how your app works.  
 - Mark components that share data, that change state, or that depend on responses from the server.  
 
-- [] Create and upload `/docs/UI.md` and associated image files.
-- [] Submit its GitHub URL.
+- [ ] Create and upload `/docs/UI.md` and associated image files  
+- [ ] Submit its GitHub URL  
 
 ---
 
-## Week 39-41: Application Programming Interface (API) design  
+## Week 38–40: Application Programming Interface (API) design  
 
-An API is the way that a client *interfaces* with the server. Using your Data Model documentation and your Architectural document, begin deciding how the client will tell the server what to do. For your sanity, use REST as a working paradigm. Begin the design of your API in step with the conceptual design of your frontend. Think about how they will interact.
+An API is the way that a client *interfaces* with the server. Using your Data Model documentation and your Architectural document, begin deciding how the client will tell the server what to do. For your sanity, use REST as a working paradigm. Begin the design of your API in step with the conceptual design of your frontend. Think about how they will interact.  
 
 - Write down what *resources* your app manipulates: tasks, posts, images, etc.  
 - For each:  
@@ -140,43 +155,43 @@ An API is the way that a client *interfaces* with the server. Using your Data Mo
   - Describe responses (status codes, JSON shape).  
 - Include example requests and responses.  
 - Decide how errors are reported.  
-- Document this design before you code.
+- Document this design before you code.  
 
-- Upload and submit `/docs/API.md` (that may have a link to an OpenAPI3 file).
+**Submission**  
+- [ ] Upload and submit `/docs/API.md` (that may have a link to an OpenAPI3 file)  
 
 ---
 
-## Week 40-42: Visual design  
+## Week 39–41: Visual design  
 
 - Add visual identity to your wireframe.  
 - Choose simple typography, color, and spacing. Keep usability first.  
 - Consider accessibility: contrast, legible fonts, colorblind-safe palettes.  
-  - Consider a design framework.
 - Apply the design to a few key screens.  
 - Share your designs and ask: “is this clear at a glance?”  
 
-- Upload and submit `/docs/VISUAL.md` with any images, and descriptions of the design and its intent.
+- [ ] Upload and submit `/docs/VISUAL.md` with any images, and descriptions of the design and its intent  
 
 ---
 
-## Week 40-44: Implement the User Interface
+## Week 39–43: Implement the User Interface  
 
-Iterate between the API implementation and UI implementation.
+Iterate between the API implementation and UI implementation.  
 
 - Begin building real Svelte components from your wireframes and designs.  
 - Start with layout and navigation. Add interactive elements connected to mock data.  
-- Build reusable components where possible.
+- Build reusable components where possible.  
 - Implement basic states (loading, error, empty).  
-- Deploy regularly — don’t wait until the UI is “done.”
+- Deploy regularly — don’t wait until the UI is “done.”  
 
-- [] Describe your progress and struggles in your weekly reports.
-- [] Code reviews.
+- [ ] Describe your progress and struggles in your weekly reports  
+- [ ] Code reviews  
 
 ---
 
-## Week 40-44: Implement the API
+## Week 39–43: Implement the API  
 
-Using Netlify functions as REST resource endpoints, begin accepting requests from the UI and sending responses.
+Using Netlify functions as REST resource endpoints, begin accepting requests from the UI and sending responses.  
 
 - Build the routes you planned.  
 - Start small — one route working end-to-end — then expand.  
@@ -185,12 +200,12 @@ Using Netlify functions as REST resource endpoints, begin accepting requests fro
 - Handle errors gracefully.  
 - Test endpoints with Postman or curl before hooking up the frontend.  
 
-- [] Describe your progress and struggles in your weekly reports.
-- [] Code reviews.
+- [ ] Describe your progress and struggles in your weekly reports  
+- [ ] Code reviews  
 
 ---
 
-## Week 40-48: Core feature end-to-end  
+## Week 39–47: Core feature end-to-end  
 
 - Connect the frontend to the backend.  
 - Build the single most important feature of your app fully:  
@@ -199,14 +214,14 @@ Using Netlify functions as REST resource endpoints, begin accepting requests fro
 - Confirm loading, error, and empty states appear correctly.  
 - Have another person use your app for the core task without guidance.  
 
-- [] Describe your progress and struggles in your weekly reports.
-- [] Code reviews.
+- [ ] Describe your progress and struggles in your weekly reports  
+- [ ] Code reviews  
 
 ---
 
-## Week 47 and 49: Minimum Viable Product (MVP) completed
+## Week 46 and 48: Minimum Viable Product (MVP) completed  
 
-Congratulations! This is what you have been working towards.
+Congratulations! This is what you have been working towards.  
 
 - Your app’s main purpose now works on production.  
 - The flow is usable: no dead ends, no glaring bugs in the core path.  
@@ -215,31 +230,31 @@ Congratulations! This is what you have been working towards.
 - Verify the app works on multiple devices/browsers.  
 - This is not “final” but shows your concept clearly.  
 
-- [] Submit your repo
-- [] Submit your production URL
-- [] Ensure that the repo source builds and deploys the product
+- [ ] Submit your repo  
+- [ ] Submit your production URL  
+- [ ] Ensure that the repo source builds and deploys the product  
 
 ---
 
-## Week 48-50: Presentations
+## Week 47–49: Presentations  
 
-Show your classmates what you have been doing all this time!
+Show your classmates what you have been doing all this time!  
 
 - Prepare a short live demo.  
 - Show the core feature working end-to-end.  
 - Explain briefly: what problem does this app solve? how do users accomplish that?  
 - Highlight one or two design or technical choices.  
-- Enjoy your colleagues project demos. Ask questions. Compliment.
+- Enjoy your colleagues’ project demos. Ask questions. Compliment.  
 
 ---
 
-## Week 48-50: Peer Evaluations
+## Week 47–49: Peer Evaluations  
 
-- You will evaluate 3 or 4 projects.
-  - You will be graded on the quality of your evaluations
+- You will evaluate 3 or 4 projects.  
+  - You will be graded on the quality of your evaluations.  
 - Evaluations consider:  
   - Originality and scope  
   - Functionality of the MVP  
   - Code and commit hygiene  
   - Documentation and presentation  
-- Feedback will focus on both strengths and areas to improve for future work.  
+- Feedback will focus on both strengths and areas to improve for future work.
