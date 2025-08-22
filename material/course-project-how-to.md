@@ -19,7 +19,7 @@ Each phase occurs over a period of time, concurrent with other phases. You won't
 
 ---
 
-## Week 36 and 37: Conceive the project  
+## Week 36-37: Conceive the project  
 
 All projects start with an idea. The best start with 99 ideas. 
 
@@ -190,7 +190,7 @@ Iterate between the API implementation and UI implementation.
 
 ---
 
-## Week 39–43: Implement the API  
+## Week 39–43: Implement the API (backend)  
 
 Using Netlify functions as REST resource endpoints, begin accepting requests from the UI and sending responses.  
 
