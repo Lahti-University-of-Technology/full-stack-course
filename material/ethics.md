@@ -1,6 +1,6 @@
 # Full Stack Development course: expectations and ethical obligations
 
-This document sets out the expectations for conduct in this course and the consequences of falling short. Most students already act responsibly; these rules exist to make expectations explicit and to ensure fairness. Read this once and follow it throughout the course. If anything is unclear, it is your responsibility to ask for clarification before submitting work. "I did not know" is not an excuse.
+This document sets out the expectations for conduct in this course and the consequences of falling short. Most students already act responsibly; these rules exist to make expectations explicit and to ensure fairness. Read this once and follow it throughout the course. If anything is unclear, it is your responsibility to ask for clarification before submitting work. "I misunderstood" is not an excuse.
 
 ## Principles
 
@@ -10,17 +10,15 @@ This document sets out the expectations for conduct in this course and the conse
 4. All data is handled responsibly.
 5. You can explain every line you submit.
 
-If this is clear and obvious to you, this document probably does not apply to you.
+If this is clear and obvious to you, you might be able to skim the rest. 
 
 ## Positive expectations
-
-You will:
 
 - Do original work. Write code and text yourself. Use sources to learn, not to impersonate competence.
 - Be transparent. Keep a public repository and public deployment unless I approve an exception. Commit regularly. Do not rewrite history to hide mistakes.
 - Disclose help. Cite people, libraries, tutorials, and AI tools. Say exactly what you used and how.
 - Use third-party code responsibly. Check the license. Attribute clearly. Only include what you understand.
-- Use AI as a tool, not a substitute. You may use AI for brainstorming, examples, boilerplate, tests, and explanations. You must document prompts and which outputs you kept. You must be able to reproduce and explain the result without AI.
+- Use AI as a tool, not a substitute. You may use AI for brainstorming, examples, boilerplate, tests, and explanations. You are encouraged to document prompts and which outputs you kept. You must be able to reproduce and explain the result without AI.
 - Collaborate ethically. Discuss ideas freely. Never share or submit code for someone else. Never paste someone else’s solution.
 - Protect data and secrets. Do not commit credentials. Do not use real personal data without informed consent. Use environment variables. Rotate keys if leaked.
 - Tell the truth. Do not fabricate results, demos, logs, tests, or commit history.
@@ -32,10 +30,13 @@ It is far better to fail by lack of work than to fail by cheating. Any one of th
 - Copying code or text without attribution.
 - Contract cheating. Someone else writes any part of your deliverable.
 - Fabricated data, logs, benchmarks, user tests, or demonstrations.
-- Hiding work in private repositories to avoid review when public work is required.
+- Hiding work in private repositories to avoid review. Public work is required.
+- Not committing and pushing to GitHub to avoid review. Public work is required.
 - Tampering with commit history to misrepresent timeline or authorship.
 - A code walkthrough you cannot pass. If you cannot explain your own submission, it is not yours.
-- Large last-minute commit dump, unclear authorship, or even minor timeline games.
+- Large, polished commit dumps,
+- unclear authorship, or
+- even minor timeline games.
 
 These may also trigger course failure and a report to the university.
 
@@ -139,7 +140,7 @@ If you cannot do these things, the work is not yours.
 
 ### Note on disclosure
 
-While disclosure is not required in this course, in professional or academic contexts outside, disclosure may be mandatory. You should be prepared to adapt to stricter standards in research, industry, or publishing.
+While disclosure of AI contribution is not required in this course, in professional or academic contexts outside, disclosure may be mandatory. You should be prepared to adapt to stricter standards in research, industry, or publishing.
 
 ## Third-party code and content
 
@@ -154,7 +155,7 @@ Collaboration is encouraged. Software is not built in isolation, and you will le
 ### Allowed
 
 - Talking through ideas, debugging, and design decisions.  
-- Pairing briefly to get unstuck, even if your peer types the code.  
+- Pairing for learning or help, even if your peer types the code.  
 - Watching how someone else solves a problem to learn the approach.  
 - Sharing resources, tutorials, or references.  
 - Giving feedback on each other’s code or deployments.  
@@ -194,12 +195,13 @@ Rarely, GitHub or Microsoft will ban a user without explanation or appeal. You m
 
 ### Forbidden
 
-- Sharing accounts or tokens.
-- Creating secondary accounts to evade limits, hide authorship, simulate activity, or bypass a ban.
-- Buying or trading stars, forks, followers, traffic, or reviews.
-- Spam or automated engagement that violates platform terms.
-- Distributing malware, infringing code or data, or violating licenses.
-- Abusive scraping, rate limit evasion, credential stuffing, or similar abuse.
+- Any violation of any account's Terms of Service, not limited to:
+  - Sharing passwords, accounts or tokens.
+  - Creating secondary accounts to evade limits, hide authorship, simulate activity, or bypass a ban.
+  - Buying or trading stars, forks, followers, traffic, or reviews.
+  - Spam or automated engagement that violates platform terms.
+  - Distributing malware, infringing code or data, or violating licenses.
+  - Abusive scraping, rate limit evasion, credential stuffing, or similar abuse.
 
 These behaviors often trigger platform enforcement and are course violations on their own.
 
@@ -212,7 +214,7 @@ These behaviors often trigger platform enforcement and are course violations on 
 
 ### Safeguards (strongly recommended)
 
-- Keep an approved secondary remote ready, such as GitLab.
+- Keep a secondary remote ready, such as GitLab.
 - Push mirrors regularly so commit history, issues, and CI logs are duplicated.
 - Export a weekly repo bundle or release artifact that includes commit history and build logs.
 
@@ -239,16 +241,17 @@ Make your work easy to inspect from idea to production. I and your evaluators sh
 These are non-negotiable and violations may result in a 0 for the project.
 
 - Production deploy must build from the `main` branch of the project repository.
-- Clear commit history tied to your work. No bulk dumps at the deadline.
+- Clear commit history tied to your work. No bulk dumps.
 - Contributions to `main` must have a readable history. Do not rewrite history to hide authorship or timing.
 - Public URL for the running app when required.
-- Steps from concept to production are explainable with evidence. Issues, pull requests, CI logs, deployment notes, and test results must be accessible.
+- Steps from concept to production are explainable with evidence.
+- Issues, pull requests, CI logs, deployment notes, and test results must be accessible.
 
 ### Not required, but strongly protective
 
 These files are optional. If there is any question about authorship or ethics and these are not present or are incomplete, the burden shifts to you. I will freeze grades, audit the work, and apply deductions or a zero if you cannot justify your submission.
 
-- `ATTRIBUTION.md`: list libraries, tutorials, snippets, people, and any code you did not write originally. Include links and licenses.
+- `ATTRIBUTION.md` (alternately, `CREDIT.md`): list libraries, tutorials, snippets, people, and any code you did not write originally. Include links and licenses.
 - `AI_USAGE.md`: list tools, prompts, exact outputs you kept, and the edits you made.
 
 Minimal entry format:
@@ -302,6 +305,8 @@ I may ask for a live walkthrough, a quick refactor, or a time-boxed reproduction
 
 No list of rules can cover every possible situation. People are endlessly creative in finding ways to bend or evade obligations. This document sets clear standards, but it is not exhaustive. Any attempt to work around the spirit of these expectations, while technically avoiding what is written, will be treated as a violation. When in doubt, ask for clarification before acting.
 
+Ask questions early. Get clarity. Own your work.
+
 [] *By remaining in the course I affirm that I have read, understood, and will follow this document.*
 
-Ask questions early. Get clarity. Own your work.
+
