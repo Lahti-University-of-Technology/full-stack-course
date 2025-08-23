@@ -106,6 +106,52 @@ Every application moves and shapes data. At this stage, focus on **how data flow
 
 ---
 
+## Weeks 37–40: Persistence layer
+
+Every project needs to explain where its data lives. Start with a **Data Flow Diagram (DFD)**, then document the form of persistence your app uses.  
+
+### Step 1: Make a DFD (required for all projects)
+- Show how data moves: User → UI → API → storage or external service → back.  
+- Include one unhappy path (e.g. validation error).  
+- Add the diagram to `/docs/DATA_MODEL.md`.  
+
+### Step 2: Document your persistence  
+Your DFD will reveal one of three cases:  
+
+#### Case A: Database (SQL or NoSQL)  
+- If relational (Supabase/Postgres): draw an **ERD** with tables, keys, and relationships.  
+- If document (MongoDB): write small **example documents** for each main collection.  
+- Add a short note on any key constraints or indexes.  
+
+#### Case B: External API only  
+- If your app doesn’t store data itself, list the **external APIs** you depend on.  
+- For each, include:  
+  - the endpoints you will call,  
+  - what data comes back (shape of the response),  
+  - any errors you must handle.  
+
+#### Case C: Frontend-only storage  
+- If you use localStorage, IndexedDB, or in-memory state as persistence:  
+  - List what you store (keys and value shape).  
+  - Note how long it lasts (session, until cleared, etc.).  
+  - Explain why local storage is enough for your project.  
+
+### Step 3: Link to your API  
+For at least one core resource, describe how data flows end-to-end:  
+- UI input → storage/API → response → UI update.  
+Write this in 5–8 lines of text inside `/docs/PERSISTENCE.md`.  
+
+---
+
+**Deliverables**  
+- `/docs/DATA_MODEL.md` — your DFD.  
+- `/docs/PERSISTENCE.md` — one of:  
+  - ERD or document schema (if DB),  
+  - API notes (if external API),  
+  - local storage notes (if frontend-only).
+ 
+---
+
 ## Week 38–40: Architecture document  
 
 Now move from thinking about *data* to thinking about the *system as a whole*. Architecture describes the **big pieces** of your application, how they connect, and how users and data flow through them.  
@@ -169,7 +215,8 @@ An API is the way that a client *interfaces* with the server. Using your Data Mo
 - Choose simple typography, color, and spacing. Keep usability first.  
 - Consider accessibility: contrast, legible fonts, colorblind-safe palettes.  
 - Apply the design to a few key screens.  
-- Share your designs and ask: “is this clear at a glance?”  
+- Share your designs and ask: “is this clear at a glance?”
+- Design frameworks can help
 
 - [ ] Upload and submit `/docs/VISUAL.md` with any images, and descriptions of the design and its intent  
 
