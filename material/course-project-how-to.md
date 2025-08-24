@@ -1,18 +1,16 @@
 # How to Build Your Project  
 
-This guide gives you a sense of the steps involved in taking an idea from concept to a working application.  
-It is deliberately rough: lectures, seminars, and readings will add depth.  
-Think of this document as a roadmap. It shows the terrain, but you’ll fill in the details as you travel.  
+This is a very rough guide, but is an initial plan for the future.
 
-Each phase occurs over a period of time, concurrent with other phases. You won't complete one before moving onto the next, but will rather be working on several tasks in concert with each other.
+Given a range, e.g. Week 36-38, begin thinking about and learning the topic during the first week (e.g. 36), and try to have all submissions completed by the last week (e.g. the last day of week 38)
 
 ---
 
 ## Week 36: Basic platform setup  
 
 - Set up your development platform and boilerplate project.  
-- Make sure your GitHub repo and Netlify deployment are working from day one, even if the app is just “Hello World.”  
 - Early deployment avoids surprises later.  
+- Make sure your GitHub repo and Netlify deployment are working from day one, even if the app is just “Hello World.”  
 
 - [ ] Submit the project repository  
 - [ ] Submit the working production URL  
@@ -21,25 +19,25 @@ Each phase occurs over a period of time, concurrent with other phases. You won't
 
 ## Week 36-37: Conceive the project  
 
-All projects start with an idea. The best start with 99 ideas. 
+All projects start with an idea. The best start with 99 ideas.
 
 - Look around at projects of similar scope.  
   - What makes them successful? Where do they fall short?  
 - Brainstorm on your own. Brainstorm with classmates. Brainstorm with AI.
   - Generate 20 absurd, dumb, ridiculous, weird, strange, impractical ideas.  ideas.
   - Hear from your classmates 200 weird, strange, impractical ideas.
-  - Don't judge. Be creative. Just write them all down. 
+  - Don't judge. Be creative. Just write them all down.
 - Talk with classmates, friends, or potential users about these ideas.
-  - Listen carefully. If they laugh, that might be a good idea. 
+  - Listen carefully. If they laugh, that might be a good idea.
 - Try short interviews with potential users — ask about their problems without pitching your plan.  
-- From your list, narrow down to one idea.   
+- From your list, narrow down to one idea.
   - Refine it. Iterate.  
   - Ask for feedback (from me, from peers, from strangers if possible).
   - When it is a single, well-defined purpose that hopefully delights you and your classmates,
-  - ... this is your project. 
+  - ... this is your project.
 
 - [ ] Submit all of your ideas, as well you a paragraph or two about why you choose the one you did.
-- [ ] You will need my approval for this idea. 
+- [ ] You will need my approval for this idea.
 
 ---
 
@@ -58,14 +56,15 @@ A good description keeps development oriented and focused. Start by clarifying t
 - Your description should explain in simple, straightforward, declarative language:  
   - What does the application do?
   - What is its single, well-defined purpose?
-  - What problem does the project solve, if any?   
+  - What problem does the project solve, if any?
   - Who is it for?
-  - What is *not* in scope (non-goals)? 
+  - What is *not* in scope (non-goals)?
   - If it is similar to other projects, how is it different?
- 
+
 This description is often called a *Vision Statement*
 
 **Submission**  
+
 - [ ] Submit your README URL
 
 ---
@@ -102,6 +101,7 @@ Every application moves and shapes data. At this stage, focus on **how data flow
 - Talk through your diagrams with others and adjust.  
 
 **Submission**  
+
 - [ ] Add your diagrams (images or PDF) to `/docs/DATA_MODEL.md` with a short description.  
 
 ---
@@ -111,19 +111,23 @@ Every application moves and shapes data. At this stage, focus on **how data flow
 Every project needs to explain where its data lives. Start with a **Data Flow Diagram (DFD)**, then document the form of persistence your app uses.  
 
 ### Step 1: Make a DFD (required for all projects)
+
 - Show how data moves: User → UI → API → storage or external service → back.  
 - Include one unhappy path (e.g. validation error).  
 - Add the diagram to `/docs/DATA_MODEL.md`.  
 
 ### Step 2: Document your persistence  
+
 Your DFD will reveal one of three cases:  
 
 #### Case A: Database (SQL or NoSQL)  
+
 - If relational (Supabase/Postgres): draw an **ERD** with tables, keys, and relationships.  
 - If document (MongoDB): write small **example documents** for each main collection.  
 - Add a short note on any key constraints or indexes.  
 
 #### Case B: External API only  
+
 - If your app doesn’t store data itself, list the **external APIs** you depend on.  
 - For each, include:  
   - the endpoints you will call,  
@@ -131,25 +135,29 @@ Your DFD will reveal one of three cases:
   - any errors you must handle.  
 
 #### Case C: Frontend-only storage  
+
 - If you use localStorage, IndexedDB, or in-memory state as persistence:  
   - List what you store (keys and value shape).  
   - Note how long it lasts (session, until cleared, etc.).  
   - Explain why local storage is enough for your project.  
 
 ### Step 3: Link to your API  
+
 For at least one core resource, describe how data flows end-to-end:  
+
 - UI input → storage/API → response → UI update.  
 Write this in 5–8 lines of text inside `/docs/PERSISTENCE.md`.  
 
 ---
 
 **Deliverables**  
+
 - `/docs/DATA_MODEL.md` — your DFD.  
 - `/docs/PERSISTENCE.md` — one of:  
   - ERD or document schema (if DB),  
   - API notes (if external API),  
   - local storage notes (if frontend-only).
- 
+
 ---
 
 ## Week 38–40: Architecture document  
@@ -158,15 +166,17 @@ Now move from thinking about *data* to thinking about the *system as a whole*. A
 
 - Create a **Context Diagram**: show your app as a box, with users and any external systems (like APIs) around it, and arrows for interactions.  
 - Create a **Container Diagram**: break your app into its main pieces (frontend/client, backend/API, database, external services). Show how they connect.  
-- List the **Resources and Operations (CRUD)** your app will need. For example: *Tasks → create, read, update, delete*. 
+- List the **Resources and Operations (CRUD)** your app will need. For example: *Tasks → create, read, update, delete*.
 - (Optional) Create a **Sequence Diagram** for one core use case (e.g. user logs in, backend checks DB, returns session).  
 - (Optional) Create a **Component Diagram** for one container (like your backend). Show the main modules or components and how they depend on each other.  
 - Keep diagrams simple: boxes and arrows, hand-drawn or digital, with short labels.  
 
 **Submission**  
+
 - [ ] Add your diagrams and notes to `/docs/ARCHITECTURE.md`  
   
 **Glossary (plain language)**  
+
 - **Context Diagram**: Big-picture view. Shows your app, the users, and outside systems, and how they connect.  
 - **Container Diagram**: Shows the main pieces inside your app (like frontend, backend, database) and how they talk to each other.  
 - **Component Diagram**: Shows how one piece (like the backend) is broken down into smaller modules.  
@@ -205,6 +215,7 @@ An API is the way that a client *interfaces* with the server. Using your Data Mo
 - Document this design before you code.  
 
 **Submission**  
+
 - [ ] Upload and submit `/docs/API.md` (that may have a link to an OpenAPI3 file)  
 
 ---

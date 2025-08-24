@@ -2,7 +2,7 @@
 
 This document sets out clear expectations for conduct in this course and the consequences of falling short.
 
-It is quite difficult to run afoul of the course expectations. It really takes effort and intent. If you understand and follow the *spirit* of the course, then you will have no issues.
+It is quite difficult to run afoul of the course expectations. It takes real effort and intent. If you understand and follow the spirit of the course, then you will have no issues.
 
 ## General Expectations
 
@@ -16,61 +16,74 @@ You are encouraged to consult tutorials, AI, friends, coding examples, or whatev
 
 The rest of this document expands on these expectations and discusses edge cases.
 
-## Git commit history and GitHub
+## Git commit history
 
 A git repository automatically records a *commit history*, which is a timeline showing what work was done, when it was done, and by whom. This history is the clearest evidence of authorship and progress. In professional and academic settings, this is expected and welcomed.
 
-Your GitHub repo is not a backup. It is your real work. It must contain your latest progress, not a delayed upload or reconstruction at the end. Its history should be organic and unpolished, and show your *thinking*.
+A credible commit history looks organic and unpolished. It shows starts, stops, abandoned ideas, errors, and backtracking. This natural pattern is easy to recognize and nearly impossible to fake.
 
 ### Expectations  
 
-- Commit and push to GitHub regularly during each programming session and once at the end. This ensures that your *progress* is transparent and open to evaluation.
-- A real commit history shows starts, stops, abandoned ideas, errors, and backtracking. This natural pattern is easy to recognize.  
-- GitHub is an accurate reflection of your latest work.
-  - All substantial work appears in GitHub as you do it.
-- Your GitHub commit history is only ever appended.
-The only way to have a clean, credible history is through steady, honest progress. You are responsible for preserving a credible trail of work.
+- Commit regularly during each programming session and once at the end.  
+- All substantial work must appear in commits as you do it.  
+- Commit history is only ever appended — it is never rewritten.  
+- The only way to have a clean, credible history is through steady, honest progress.  
 
 #### Acceptable
 
 - Frequent small commits during a session, then a final push before you stop.  
 - Normal refactors that produce several commits with clear messages.  
 - Squash-merging a PR when the original commit history remains visible in the PR.  
-- Some libraries and frameworks generate large artifacts such as lockfiles (e.g. `package-lock.json`). These are always fine.
+- Large auto-generated files (e.g. `package-lock.json`, `Cargo.lock`) with a clear commit message.  
 
-### Prohibited
+#### Prohibited: off-repo development
 
-Likewise, it is nearly impossible to fake the natural pattern of honest progress. These practices will at best result in a poor grade, possibly failure.
-
-#### Off-repo development
-
-  *Off-repo development* is writing or editing project code without an ongoing, up-to-date commit history on the course repository. This includes:  
+*Off-repo development* is writing or editing project code without an ongoing, up-to-date commit history in the course repository. This includes:  
 
 - Working in a private or alternate repository.  
-- Keeping work only on your local machine without pushing to the course repo.  
-- Developing in a cloud IDE that is not connected to the course repository.  
-- Deploying from a repository other than the one used for grading.  
+- Keeping work only on your local machine without pushing.  
+- Developing in a cloud IDE that is not connected to the repo.  
 
-#### Bulk import
+#### Prohibited: bulk import
 
-  *Bulk import* means introducing substantial work in one or a small number of commits that do not reflect how the work actually evolved.
+*Bulk import* means introducing substantial work in one or a small number of commits that do not reflect how the work actually evolved. Examples:  
 
 - Large feature sets or entire directories in a few commits.  
 - Replacing the project with a new snapshot.  
 - Force-pushing rewritten history to simulate gradual progress.  
-- Pushing to GitHub only a few times a semester is not allowed.  
-- Your GitHub commit history is never deleted or altered in any way.
+- Pushing only a few times in the semester.  
 
-### Policy  
+**Policy**: Off-repo development and bulk import, or any reconstruction of history to simulate progress, **is misconduct per se**. Intent or authorship do not matter.  
 
-Off-repo development and bulk import, or any reconstruction of history to simulate progress, **is misconduct *per se***. Intent or authorship do not matter. It violates the course requirement for transparency and will be treated as an ethics violation.  
+---
 
-### Examples of misconduct  
+## GitHub
 
-- Coding for days in a private repo, then copying the work into the course repo.
-- Keeping a week of local commits and pushing them only at the end.
-- Deleting the repo and recreating a “clean” timeline.
-- Disconnecting CI/CD from the public repo and deploying from a private one.
+Your GitHub repo is not a backup — it is your real work. It must always contain your latest progress, not a delayed upload or reconstruction at the end. Evaluators will grade from what is visible in GitHub.
+
+### Expectations  
+
+- The `main` branch is the authoritative branch.
+- Production deploys build directly from it.  
+- `main` to deployment CI/CD pipeline always runs.
+- The repository remains public (unless I approve an exception).  
+
+### Prohibited
+
+- Deleting the repo and recreating a “clean” timeline.  
+- Deploying from a private or alternate repository.  
+- Staging work in shadow repositories.  
+- Deploys that are not the code on `main`.  
+- Do not disconnect CI/CD from the public repo.
+- Repo history is never deleted or replaced.  
+
+**Examples of misconduct**  
+
+- Coding for days in a private repo, then copying the work into the course repo.  
+- Keeping local commits for a week and pushing them all at once.  
+- Disconnecting CI/CD from the public repo and deploying elsewhere.  
+
+You are responsible for ensuring GitHub is a continuous, accurate reflection of your work.  
 
 ## General Expectations, clarified
 
@@ -126,19 +139,19 @@ Peer evaluations are part of how grades are determined. They have a real effect 
 
 ### Strictly forbidden
 
-- **Grade trading**. Any explicit or implicit agreement to inflate or deflate each other’s scores.
-  Example: "You rate me 5 and I will rate you 5" or coordinated group inflation. *Soliciting* a trade is also forbidden. Report such an offer to me directly.
+- Grade trading. Any explicit or implicit agreement to inflate or deflate each other’s scores.
+  Example: "You rate me 5 and I will rate you 5" or coordinated group inflation. Soliciting a trade is also forbidden. Report such an offer to me directly.
 
-- **Harassing**, pressuring, or retaliating against an evaluator to change a score. This includes messages, hints, guilt trips, threats, or social pressure.
-- **Back channel discussions** about grades during the evaluation window. Do not contact peers about changing evaluations. Use the appeal process only.
-- **Coordinated narratives**. Identical or templated justifications across a group that do not match the evidence.
+- Harassing, pressuring, or retaliating against an evaluator to change a score. This includes messages, hints, guilt trips, threats, or social pressure.
+- Back channel discussions about grades during the evaluation window. Do not contact peers about changing evaluations. Use the appeal process only.
+- Coordinated narratives. Identical or templated justifications across a group that do not match the evidence.
 
 ### Consequences
 
 - Grade trading or solicitation: zero on the peer evaluation component for the course and a report to the university. Related assignment grades may also be set to zero.
 - Harassment or pressure to change a grade: immediate failure of the course and a report to the university.
 - Unjustified evaluations: discarded and replaced by instructor assessment or team median. Repeated issues escalate to a zero and a report.
-- Suspicion standard: if I even *suspect* manipulation, trading, or pressure, I will freeze grades, review evidence, and interview the parties. If you cannot justify your scores with evidence, penalties above apply.
+- Suspicion standard: if I even suspect manipulation, trading, or pressure, I will freeze grades, review evidence, and interview the parties. If you cannot justify your scores with evidence, penalties above apply.
 
 ### Appeals and safeguards
 
@@ -160,7 +173,7 @@ Not OK
 
 ### Evaluator pledge
 
-[] *"I will be candid, fair, and independent. I will justify each score with evidence. I will not discuss grades outside the official process."*
+[] "I will be candid, fair, and independent. I will justify each score with evidence. I will not discuss grades outside the official process."
 
 ## AI Policy
 
@@ -200,7 +213,7 @@ While disclosure of AI contribution is not required in this course, in professio
 
 That said, if you want to conform to emerging industry standards, create an `AI_USAGE.md` file in `docs/` and append AI contributions as you go. These entries should include the GitHub commit or PR URL where the change was made. See [ai-usage-log.md](ai-usage-log.md) for a template.
 
-Maintaining such a log is optional here, but it may benefit you later. If you use this project in applications for **jobs, internships, or funding**, reviewers may want to see exactly how you used AI. A clear usage log demonstrates transparency, responsibility, and professional practice.
+Maintaining such a log is optional here, but it may benefit you later. If you use this project in applications for jobs, internships, or funding, reviewers may want to see exactly how you used AI. A clear usage log demonstrates transparency, responsibility, and professional practice.
 
 ## Third-party code and content
 
@@ -252,7 +265,7 @@ Rarely, GitHub or Microsoft will ban a user without explanation or appeal. You m
 - Use a single personal account per service unless I approve otherwise.
 - Enable two factor auth and protect tokens and keys.
 - If any account is restricted, suspended, or banned, notify me within 24 hours and forward the platform notice. Silence is misconduct.
-- Within 72 hours of a restriction you must restore full transparency. Mirror the repository *with complete history* to an approved host, re establish the public deploy, and preserve CI logs and issues.
+- Within 72 hours of a restriction you must restore full transparency. Mirror the repository with complete history to an approved host, re establish the public deploy, and preserve CI logs and issues.
 
 ### Forbidden
 
@@ -301,10 +314,9 @@ Make your work easy to inspect from idea to production. I and your evaluators sh
 These are non-negotiable and violations may result in a 0 for the project.
 
 - Production deploy must build from the `main` branch of the project repository.
-- Commit history must remain intact and acceptable.
-- Contributions to `main` must have a readable history. Do not rewrite history to hide authorship or timing.
+- Contributions to `main` must have a readable history.  
 - Public URL for the running app when required.
-- Steps from concept to production are explainable with evidence.
+- Steps from concept to production must be explainable with evidence.
 - Issues, pull requests, CI logs, deployment notes, and test results must be accessible.
 
 ### Not required, but strongly protective
@@ -312,16 +324,17 @@ These are non-negotiable and violations may result in a 0 for the project.
 These files are optional. If there is any question about authorship or ethics and these are not present or are incomplete, the burden shifts to you. I will freeze grades, audit the work, and apply deductions or a zero if you cannot justify your submission.
 
 - `ATTRIBUTION.md`: Attribution is your credit list. Libraries, tutorials, snippets, people, and any code you did not write originally. Include links and licenses.
-- `AI_USAGE.md`: list tools, prompts, exact outputs you kept, and the edits you made.
-Minimal entry format:
+  Minimal entry format:
 
-```text
-Source: <link or name>
-Scope: <file or feature>
-License: <license and compliance note>
-Reason: <what you used and why>
-Edits: <what you changed>
-```
+  ```text
+  Source: <link or name>
+  Scope: <file or feature>
+  License: <license and compliance note>
+  Reason: <what you used and why>
+  Edits: <what you changed>
+  ```
+
+- `AI_USAGE.md`: list tools, prompts, exact outputs you kept, and the edits you made. See [ai-usage-log.md](ai-usage-log.md) for more info.
 
 ### Prohibited practices
 
@@ -336,8 +349,8 @@ Edits: <what you changed>
 
 OK:
 
-- "I used OpenAI for test data. Prompts and kept outputs are in AI_USAGE.md."
-- "I adapted pagination from Remix docs. Link and license in ATTRIBUTION.md. I rewrote the fetch layer and can explain it."
+- "I used OpenAI for test data. Prompts and kept outputs are in `AI_USAGE.md`."
+- "I adapted pagination from Remix docs. Link and license in `ATTRIBUTION.md`. I rewrote the fetch layer and can explain it."
 - "Teammate reviewed my PR and left comments. No code copied."
 Not OK:
 
