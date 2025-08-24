@@ -1,18 +1,78 @@
 # Full Stack Development course: expectations and ethical obligations
 
-This document sets out the expectations for conduct in this course and the consequences of falling short. Most students already act responsibly; these rules exist to make expectations explicit and to ensure fairness. Read this once and follow it throughout the course. If anything is unclear, it is your responsibility to ask for clarification before submitting work. "I misunderstood" is not an excuse.
+This document sets out clear expectations for conduct in this course and the consequences of falling short.
 
-## Principles
+It is quite difficult to run afoul of the course expectations. It really takes effort and intent. If you understand and follow the *spirit* of the course, then you will have no issues.
+
+## General Expectations
+
+You are encouraged to consult tutorials, AI, friends, coding examples, or whatever tools help you push your project, as long as:
 
 1. All work is your own.
 2. All work is transparent.
 3. All help and sources are disclosed.
 4. All data is handled responsibly.
-5. You can explain every line you submit.
+5. You thoroughly understand and can explain every line you submit.
 
-If this is clear and obvious to you, you might be able to skim the rest. 
+The rest of this document expands on these expectations and discusses edge cases.
 
-## Positive expectations
+## Git commit history and GitHub
+
+A git repository automatically records a *commit history*, which is a timeline showing what work was done, when it was done, and by whom. This history is the clearest evidence of authorship and progress. In professional and academic settings, this is expected and welcomed.
+
+Your GitHub repo is not a backup. It is your real work. It must contain your latest progress, not a delayed upload or reconstruction at the end. Its history should be organic and unpolished, and show your *thinking*.
+
+### Expectations  
+
+- Commit and push to GitHub regularly during each programming session and once at the end. This ensures that your *progress* is transparent and open to evaluation.
+- A real commit history shows starts, stops, abandoned ideas, errors, and backtracking. This natural pattern is easy to recognize.  
+- GitHub is an accurate reflection of your latest work.
+  - All substantial work appears in GitHub as you do it.
+- Your GitHub commit history is only ever appended.
+The only way to have a clean, credible history is through steady, honest progress. You are responsible for preserving a credible trail of work.
+
+#### Acceptable
+
+- Frequent small commits during a session, then a final push before you stop.  
+- Normal refactors that produce several commits with clear messages.  
+- Squash-merging a PR when the original commit history remains visible in the PR.  
+- Some libraries and frameworks generate large artifacts such as lockfiles (e.g. `package-lock.json`). These are always fine.
+
+### Prohibited
+
+Likewise, it is nearly impossible to fake the natural pattern of honest progress. These practices will at best result in a poor grade, possibly failure.
+
+#### Off-repo development
+
+  *Off-repo development* is writing or editing project code without an ongoing, up-to-date commit history on the course repository. This includes:  
+
+- Working in a private or alternate repository.  
+- Keeping work only on your local machine without pushing to the course repo.  
+- Developing in a cloud IDE that is not connected to the course repository.  
+- Deploying from a repository other than the one used for grading.  
+
+#### Bulk import
+
+  *Bulk import* means introducing substantial work in one or a small number of commits that do not reflect how the work actually evolved.
+
+- Large feature sets or entire directories in a few commits.  
+- Replacing the project with a new snapshot.  
+- Force-pushing rewritten history to simulate gradual progress.  
+- Pushing to GitHub only a few times a semester is not allowed.  
+- Your GitHub commit history is never deleted or altered in any way.
+
+### Policy  
+
+Off-repo development and bulk import, or any reconstruction of history to simulate progress, **is misconduct *per se***. Intent or authorship do not matter. It violates the course requirement for transparency and will be treated as an ethics violation.  
+
+### Examples of misconduct  
+
+- Coding for days in a private repo, then copying the work into the course repo.
+- Keeping a week of local commits and pushing them only at the end.
+- Deleting the repo and recreating a “clean” timeline.
+- Disconnecting CI/CD from the public repo and deploying from a private one.
+
+## General Expectations, clarified
 
 - Do original work. Write code and text yourself. Use sources to learn, not to impersonate competence.
 - Be transparent. Keep a public repository and public deployment unless I approve an exception. Commit regularly. Do not rewrite history to hide mistakes.
@@ -25,19 +85,20 @@ If this is clear and obvious to you, you might be able to skim the rest.
 
 ## What earns a zero on the assignment
 
+Work leaves a digital trail. The nature of that trail is impossible to fake or fabricate. Work that is the product of struggle and exploration leaves a different trace than work that is the product of plagiarism or contract cheating. Listed here are some of the hallmarks of work that violates the expectations.
+
 It is far better to fail by lack of work than to fail by cheating. Any one of these triggers an automatic 0 on that assignment or exam:
 
 - Copying code or text without attribution.
 - Contract cheating. Someone else writes any part of your deliverable.
-- Fabricated data, logs, benchmarks, user tests, or demonstrations.
+- Fabricated logs, benchmarks, user tests, commit history or demonstrations.
 - Hiding work in private repositories to avoid review. Public work is required.
-- Not committing and pushing to GitHub to avoid review. Public work is required.
+- Not committing or pushing to GitHub to avoid review. Public work is required.
 - Tampering with commit history to misrepresent timeline or authorship.
 - A code walkthrough you cannot pass. If you cannot explain your own submission, it is not yours.
 - Large, polished commit dumps,
 - unclear authorship, or
 - even minor timeline games.
-
 These may also trigger course failure and a report to the university.
 
 ## What severely harms your grade
@@ -49,7 +110,6 @@ Typical deductions across rubrics.
 - Reusing substantial code with attribution but little understanding. You cannot answer basic questions about it: 50 to 80 percent.
 - Security negligence. Committing secrets or sensitive data, ignoring a reported leak, or shipping known vulnerabilities: 20 to 50 percent.
 - Nonfunctional public deployment when required and no credible attempt to fix: 10 to 30 percent.
-
 These penalties assume mistakes made in good faith. If it appears that confusion is being used as a cover for more serious misconduct such as plagiarism or contract cheating, the matter will be reviewed as a potential misconduct case rather than as an ordinary error.
 
 ## Peer evaluations
@@ -67,7 +127,8 @@ Peer evaluations are part of how grades are determined. They have a real effect 
 ### Strictly forbidden
 
 - **Grade trading**. Any explicit or implicit agreement to inflate or deflate each other’s scores.
-  Example: "You rate me 5 and I will rate you 5" or coordinated group inflation. Soliciting a trade is also forbidden.
+  Example: "You rate me 5 and I will rate you 5" or coordinated group inflation. *Soliciting* a trade is also forbidden. Report such an offer to me directly.
+
 - **Harassing**, pressuring, or retaliating against an evaluator to change a score. This includes messages, hints, guilt trips, threats, or social pressure.
 - **Back channel discussions** about grades during the evaluation window. Do not contact peers about changing evaluations. Use the appeal process only.
 - **Coordinated narratives**. Identical or templated justifications across a group that do not match the evidence.
@@ -77,21 +138,19 @@ Peer evaluations are part of how grades are determined. They have a real effect 
 - Grade trading or solicitation: zero on the peer evaluation component for the course and a report to the university. Related assignment grades may also be set to zero.
 - Harassment or pressure to change a grade: immediate failure of the course and a report to the university.
 - Unjustified evaluations: discarded and replaced by instructor assessment or team median. Repeated issues escalate to a zero and a report.
-- Suspicion standard: if I reasonably suspect manipulation, trading, or pressure, I will freeze grades, review evidence, and interview the parties. If you cannot justify your scores with evidence, penalties above apply.
+- Suspicion standard: if I even *suspect* manipulation, trading, or pressure, I will freeze grades, review evidence, and interview the parties. If you cannot justify your scores with evidence, penalties above apply.
 
 ### Appeals and safeguards
 
-- Limited anonymity. I can see who wrote what. Keep it professional.
-- Normalization. I may rescale or weight evaluations to correct bias or outliers.
 - Appeal window. If you believe an evaluation you received is inaccurate, email me within 48 hours with specific evidence. Do not contact the evaluator. My decision is final.
 
 ### Examples
 
 OK
 
-- "Score 4. Shipped the file upload feature. PR 42 merged on September 12. Fixed bugs in issues 57 and 63. Clear commit messages."
+- "Score 4. Shipped the file upload feature. PR 42 merged on September 12. Fixed bugs in issues 57 and 63. Clear commit messages. However, I encountered a bug when..."
 - "Conflict of interest. We share housing. Request reassignment."
-
+- "I really do not like her and cannot be objective about her work."
 Not OK
 
 - "Let's all give each other 5."
@@ -109,12 +168,9 @@ You are encouraged to use every tool available to you, including AI systems. The
 
 ### Core responsibility
 
-However:
-
 - You must fully understand every line you submit.  
 - You must be able to explain your work clearly and defend your choices.  
 - If asked, you must reproduce or adapt the result without outside help.  
-
 If you cannot do these things, the work is not yours.
 
 ### Allowed uses
@@ -138,9 +194,13 @@ If you cannot do these things, the work is not yours.
 - If you cannot demonstrate understanding, the submission will receive a zero.  
 - Repeated inability to own your work may result in failure of the course.  
 
-### Note on disclosure
+### Note on AI disclosure
 
 While disclosure of AI contribution is not required in this course, in professional or academic contexts outside, disclosure may be mandatory. You should be prepared to adapt to stricter standards in research, industry, or publishing.
+
+That said, if you want to conform to emerging industry standards, create an `AI_USAGE.md` file in `docs/` and append AI contributions as you go. These entries should include the GitHub commit or PR URL where the change was made. See [ai-usage-log.md](ai-usage-log.md) for a template.
+
+Maintaining such a log is optional here, but it may benefit you later. If you use this project in applications for **jobs, internships, or funding**, reviewers may want to see exactly how you used AI. A clear usage log demonstrates transparency, responsibility, and professional practice.
 
 ## Third-party code and content
 
@@ -162,13 +222,14 @@ Collaboration is encouraged. Software is not built in isolation, and you will le
 
 ### Required
 
-- If another person wrote code in your repo, you must rewrite it yourself in your own words and style, and you must understand it completely.  
+- If another person contributes code, you may use it only if (a) it is a small assist, (b) you fully understand it, and (c) the contribution is clearly documented.  
 - You must be able to explain every solution you submit.  
 - Credit conversations or help in your commit messages or README when significant. (e.g. “Thanks to X for walking me through async/await.”)  
 
 ### Forbidden
 
 - Submitting code you did not personally re-implement and understand.  
+- You may not outsource substantial parts of your project to others. If the work is not primarily authored by you, it is misconduct.  
 - Splitting the work so one person writes a feature and another copies it wholesale.  
 - Ghost-writing: one student solving while the other never reproduces or learns.  
 
@@ -202,7 +263,6 @@ Rarely, GitHub or Microsoft will ban a user without explanation or appeal. You m
   - Spam or automated engagement that violates platform terms.
   - Distributing malware, infringing code or data, or violating licenses.
   - Abusive scraping, rate limit evasion, credential stuffing, or similar abuse.
-
 These behaviors often trigger platform enforcement and are course violations on their own.
 
 ### Consequences
@@ -241,7 +301,7 @@ Make your work easy to inspect from idea to production. I and your evaluators sh
 These are non-negotiable and violations may result in a 0 for the project.
 
 - Production deploy must build from the `main` branch of the project repository.
-- Clear commit history tied to your work. No bulk dumps.
+- Commit history must remain intact and acceptable.
 - Contributions to `main` must have a readable history. Do not rewrite history to hide authorship or timing.
 - Public URL for the running app when required.
 - Steps from concept to production are explainable with evidence.
@@ -251,9 +311,8 @@ These are non-negotiable and violations may result in a 0 for the project.
 
 These files are optional. If there is any question about authorship or ethics and these are not present or are incomplete, the burden shifts to you. I will freeze grades, audit the work, and apply deductions or a zero if you cannot justify your submission.
 
-- `ATTRIBUTION.md` (alternately, `CREDIT.md`): list libraries, tutorials, snippets, people, and any code you did not write originally. Include links and licenses.
+- `ATTRIBUTION.md`: Attribution is your credit list. Libraries, tutorials, snippets, people, and any code you did not write originally. Include links and licenses.
 - `AI_USAGE.md`: list tools, prompts, exact outputs you kept, and the edits you made.
-
 Minimal entry format:
 
 ```text
@@ -269,7 +328,6 @@ Edits: <what you changed>
 - Private repos when a public repo is required.
 - Changing the project repository.
 - Changing GitHub user.
-- Force pushing or deleting history to mask authorship or timing.
 - Staging work in shadow repositories.
 - Fake commits or fabricated logs.
 - Public deploys that are not the code on `main`.
@@ -281,7 +339,6 @@ OK:
 - "I used OpenAI for test data. Prompts and kept outputs are in AI_USAGE.md."
 - "I adapted pagination from Remix docs. Link and license in ATTRIBUTION.md. I rewrote the fetch layer and can explain it."
 - "Teammate reviewed my PR and left comments. No code copied."
-
 Not OK:
 
 - "I found a repo and changed variable names."
@@ -291,7 +348,7 @@ Not OK:
 
 ### Audit
 
-I may ask for a live walkthrough, a quick refactor, or a time-boxed reproduction without outside help. Failure to demonstrate understanding or to provide evidence will be treated as a transparency failure.
+I will at random times ask for a live walkthrough, a quick refactor, or a time-boxed reproduction without outside help. Failure to demonstrate understanding or to provide evidence will be treated as a transparency failure.
 
 ### Quick checklist
 
@@ -299,14 +356,14 @@ I may ask for a live walkthrough, a quick refactor, or a time-boxed reproduction
 - [ ] Public repo link and running URL are in the README
 - [ ] Commit history shows steady progress tied to your work
 - [ ] Issues, PRs, and CI logs are visible
-- [ ] If questioned, you can justify every score and submission with evidence
+- [ ] When questioned, you can justify every score and submission with evidence
 
 ## Acknowledgment
 
-No list of rules can cover every possible situation. People are endlessly creative in finding ways to bend or evade obligations. This document sets clear standards, but it is not exhaustive. Any attempt to work around the spirit of these expectations, while technically avoiding what is written, will be treated as a violation. When in doubt, ask for clarification before acting.
+If anything is unclear to you here, you *must* ask for clarification before submitting assignments. "I misunderstood" is not an excuse. If you *disagree* with anything here, you *must* bring up your objections and have a discussion with me before submitting work. "I thought that policy was unfair" is not an excuse.
+
+No list of rules can cover every possible situation. People are endlessly creative in finding ways to bend or evade obligations. This document sets clear standards, but it is not exhaustive. Any attempt to work around the spirit of these expectations, while technically avoiding what is written, will be treated as a violation. If you present me with a novel situation and I judge it to be misconduct, that judgment stands. Even if it was unintentional, it will still be treated as misconduct.
 
 Ask questions early. Get clarity. Own your work.
 
 [] *By remaining in the course I affirm that I have read, understood, and will follow this document.*
-
-
