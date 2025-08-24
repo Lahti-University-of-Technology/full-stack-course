@@ -4,82 +4,123 @@ This quiz is based on the course [Ethics document](../notes/ethics.md). Each que
 
 ---
 
-**1. AI assistance**  
-You ask ChatGPT to generate boilerplate code for a login form. You understand what it produced and adapt it for your project. What do you do?  
-A. Submit it as part of your project, no problem.  
-B. Paste it in without checking, since AI use is always allowed.  
-C. Ask a classmate to submit it for you.  
+## AI Assistance
+
+1. You ask ChatGPT for ten naming ideas for your project. You pick one and move on.  
+  A. Fine — brainstorming is an allowed use.  
+  B. Misuse — names must be entirely original.  
+  C. Needs disclosure or it’s misconduct.  
+
+2. You paste an error message into Copilot and use its suggested fix. You understand why it works.  
+  A. Fine — this is encouraged.  
+  B. Misuse — debugging must be manual.  
+  C. Cheating — you can’t use AI for code.  
+
+3. You ask Codex AI to implement a new feature. It writes a pull request (PR) that passes all tests and the feature works as intended. You merge the PR to `main` and deploy it.
+  A. Acceptable — the code runs and tests pass.  
+  B. Acceptable — as long as you add attribution to the PR.  
+  C. Misuse — you must be able to understand and explain any code you submit.  
+
+4. When asked to explain your code, you say: "I don’t know, the AI wrote it."  
+  A. Discouraged but acceptable — honesty and transparency are class principles.
+  B. Misuse — you must be able to explain every line.  
+  C. Acceptable — the code runs and tests pass.  
 
 ---
 
-**2. Collaboration**  
-You get stuck on a tricky async bug. A classmate sits down and types the fix directly in your repo. What must you do?  
-A. Keep it, as long as they are in the same course.  
-B. Re-implement the fix yourself in your own words and style.  
-C. Delete the commit history so it doesn’t show up.  
+## Collaboration
+
+5. A classmate shows you how to write an async function by coding in your editor. You then rewrite the solution yourself, in your own style.  
+  A. Acceptable — learning by watching and then re-implementing is fine.  
+  B. Misuse — you can’t let others touch your editor.  
+  C. Acceptable only if you add a formal attribution.  
+
+6. Your friend finishes a working frontend and submits a PR. You merge their code into your repo, create an `ATTRIBUTION.md` file and add their name, describing their contribution.
+  A. Acceptable — credit solves the issue.  
+  B. Misuse — outsourcing major work is not allowed, credit or not.  
+  C. Fine — collaboration is encouraged, and attribution is not necessary in this case.
+
+7. You’re stuck. A friend submits a one-line fix as a PR. You review it, understand it, and merge it in.  
+  A. Acceptable — you reviewed and understood it, so it’s your responsibility now.  
+  B. Not acceptable — any code written by others counts as outside work.  
+  C. Acceptable only if you also credit the friend in `ATTRIBUTION.md`.  
 
 ---
 
-**3. Transparency**  
-On the night before the deadline, you push 25 commits in a single burst, taking the repo from empty scaffold to a complete project. What happens?  
-A. This is a red flag and may earn a zero.  
-B. Perfectly acceptable: results matter, not history.  
-C. You should delete the repo and start a new one.  
+## Transparency
+
+8. Outside pressures leave you with only one day to finish the project. You:  
+  A. Commit changes regularly throughout the day, so there is still a visible record of your progress.  
+  B. Complete the entire project first and then commit it all at once at the end of the night.  
+  C. Delete the old repo and push a brand-new one showing only the finished project.  
+
+9. You delete your repo two days before the deadline and push a "clean" history showing a polished project built in five commits.  
+  A. Acceptable — you cleaned up your history.  
+  B. Unacceptable — fabricated history undermines transparency and may earn a zero.  
+  C. Acceptable if you explain it after submission.  
+
+10. You disconnect CI/CD from the public repo and deploy from a private repo.  
+  A. Acceptable as long as the app runs.  
+  B. Misuse — breaks transparency and may earn a zero.  
+  C. Acceptable if you give teammates access to the private repo.  
 
 ---
 
-**4. Peer evaluation**  
-A teammate messages you privately: “I’ll give you a 5 if you give me a 5.” What is this called?  
-A. Fair collaboration.  
-B. Grade trading, which is strictly forbidden.  
-C. Normalizing scores.  
+## Peer Evaluation
+
+11. A peer says: "I’ll give you a 5 if you give me a 5."  
+  A. Acceptable teamwork.  
+  B. Strictly forbidden grade trading.  
+  C. Acceptable only if both of you deserve 5s.  
+
+12. You give a peer a "5" with the explanation: "Worked hard."  
+  A. Acceptable justification.  
+  B. Acceptable only if others say the same.  
+  C. Unacceptable — you must cite concrete evidence.  
+
+13. You message a teammate: "Your evaluation was unfair. Please change it."  
+  A. Acceptable — open communication.  
+  B. Strictly forbidden harassment/pressure.  
+  C. Acceptable if sincere and polite.  
+
+14. You message a teammate: "The instructor misunderstood your evaluation. Please email them!"  
+  A. Strictly forbidden harassment/pressure.  
+  B. Acceptable — open communication.  
+  C. Acceptable if sincere and polite.  
 
 ---
 
-**5. Third-party code**  
-You find a snippet on Stack Overflow. You paste it in without attribution. What’s the problem?  
-A. Nothing: Stack Overflow code is always public domain.  
-B. Copying without attribution is plagiarism and earns a zero.  
-C. You can fix it later by changing variable names.  
+## Third-Party Code
+
+15. You copy a short function from Stack Overflow and paste it into your repo without comment.  
+  A. Acceptable — snippets are fair use.  
+  B. Misuse — copying without attribution is plagiarism and earns a zero.  
+  C. Acceptable if you change variable names.  
+
+16. You use an MIT-licensed library in your project and note it in `ATTRIBUTION.md`.  
+  A. Acceptable.  
+  B. Misuse — external libraries are banned.  
+  C. Acceptable only if the library is under GPL license.  
 
 ---
 
-**6. Data and security**  
-You commit an AWS secret key to your public repo. What must you do?  
-A. Nothing, it’s only for class.  
-B. Rotate the key immediately, remove it from the repo, and notify in your submission.  
-C. Hide it by deleting the repo and starting fresh.  
+## Data & Security
+
+17. You accidentally commit an API key to GitHub. What should you do?  
+  A. Nothing — it’s just for class.  
+  B. Delete the repo and start over.  
+  C. Rotate the key immediately, remove it from the repo, and note it in submission.  
+
+18. You decide to test your app using real personal data from a classmate without asking.  
+  A. Acceptable if they are in the course.  
+  B. Acceptable if you delete it afterward.  
+  C. Misuse — personal data requires consent.  
 
 ---
 
-**7. Platform accounts**  
-GitHub unexpectedly bans your account. What must you do?  
-A. Notify the instructor within 24 hours and restore transparency within 72.  
-B. Create a secret new account and continue.  
-C. Do nothing: the ban is GitHub’s fault.  
+## Platform Accounts
 
----
-
-**8. Transparency breach**  
-A student decides to disconnect the CI/CD pipeline from the public repository and instead deploy to production from a private repo. What’s the consequence?  
-A. Acceptable as long as the app runs: results matter more than process.  
-B. This breaks transparency and may earn a zero on the project.  
-C. Fine if the private repo is shared with teammates.  
-
----
-
-**9. Misuse of confusion**  
-You deliberately pretend not to understand Git so that suspicious commits look like “honest mistakes.” How is this treated?  
-A. As good-faith error, partial credit given.  
-B. As potential misconduct, not as an error.  
-C. As harmless, since learning Git is hard.  
-
----
-
-**10. Bottom line**  
-Which statement best summarizes the Ethics document?  
-A. Use every tool, collaborate freely, but you must be able to stand on and explain your own work.  
-B. Avoid AI and collaboration at all costs.  
-C. Grades matter more than process.  
-
-[Answers](../answers/38-course-ethics-quiz.md)
+19. Your GitHub account is unexpectedly suspended. What must you do?  
+  A. Notify the instructor within 24 hours and restore transparency within 72.  
+  B. Create a new account on GitHub.  
+  C. Notify the instructor and wait for a fix.
