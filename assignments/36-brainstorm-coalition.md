@@ -35,7 +35,7 @@ Any coalition member is free to use any of these ideas, or none of these ideas, 
     - Vote as a group on one idea that, if you were working on a team, you would carry it further. The idea could be one that's modified from the original brainstorm.
 
 5. **Discuss and develop that one idea**
-   Spend a few minutes discussing how, practically, one might develop the idea.
+   Spend a few minutes discussing how, practically, one might develop the idea into a non-trivial, original full-stack project.
 
 6. **Name Your Coalition**  
    Every coalition will be referred to by a name of its own choosing. Select one together before the meeting ends.  
