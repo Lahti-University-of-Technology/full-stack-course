@@ -5,22 +5,22 @@ local project → GitHub repo → automatic Netlify deploys. It also prepares yo
 
 We will all use the same stack for this course so that everyone moves forward together. If you already have deep experience with this exact stack (especially with TypeScript), or if your intended project truly cannot be built with it, let’s talk. We can consider exceptions.
 
-If you have experience with this stack, consider skipping down to the checklist in Section 13
-
-You will:
+In this assignment you will:
 
 - Create a public GitHub repository named `fsd-project-2025`
 - Set up local development with VS Code and GitHub CLI
 - Install Node using a Node version manager (nvm) and use Node v22
-- Optionally add TypeScript tooling
+- Add TypeScript tooling (optional for beginners)
 - Verify the pipeline with a simple static site
 - Initialize a SvelteKit project and deploy it
 - Edit the SvelteKit page to show `Hello World` and verify the deploy
 
+If you have experience setting up this stack, you can skip down to the checklist in Section 13.
+
 ## Why this stack?
 
 In this course, everyone will use the same stack:  
-**GitHub + Netlify + Node v22 + SvelteKit (+ optional TypeScript)**  
+**GitHub + Netlify + Node v22 + SvelteKit (+ TypeScript or JavaScript)**  
 
 This ensures that:
 
@@ -32,12 +32,14 @@ This ensures that:
 - **GitHub** is the standard for version control in industry.
 - **Netlify** is a modern deployment platform, conceptually similar to Vercel, AWS Amplify, or other cloud providers.
 - **Node v22** is current and widely used in production.
-- **SvelteKit** is modern and forces students to think in terms of components, state, and reactive UI. Even if they don’t use Svelte professionally, the concepts transfer directly to React, Vue, Angular, etc.
-- **TypeScript** is optional here but widely used in industry.
+- **SvelteKit** is modern and encourages students to think in terms of components, state, and reactive UI. The concepts transfer directly to React, Vue, Angular, etc.
+- **TypeScript** is optional for beginners but widely used in industry.
 
 ---
 
 ## 0. Accounts and tools you will need
+
+Install the following programs, and sign up for the following services:
 
 - **Node Version Manager (NVM)** is a tool that lets you install and switch between different versions of Node.js on your computer.
   This ensures that your development environment stays consistent, even if projects (or the course) require different Node versions. For this course we will use **Node v22**, and NVM makes installing and managing that version simple. Find here the installation instructions for your platform.
@@ -76,7 +78,7 @@ This makes sure that Git does not try to track the enormous `node_modules` folde
     - **Terminal**: running Node, npm, and project build commands  
 
 - **Git** installed on your machine: <https://code.visualstudio.com/docs/sourcecontrol/intro-to-git>  
-  Git is the version control system we use to track changes in your code.
+  [Git](/material/git.md) is the version control system we use to track changes in your code.
   It records your project history, makes collaboration possible, and is the foundation for GitHub.
 
   - **Note: `master` vs `main` branch**
@@ -110,7 +112,8 @@ You can also create it from the terminal with GitHub CLI:
 
 ```sh
 gh auth login
-# Follow the prompts. Choose GitHub.com, HTTPS, and authenticate.
+
+# Follow the prompts. Choose GitHub.com, HTTPS, and authenticate
 
 gh repo create fsd-project-2025 --public --confirm
 ```
@@ -124,12 +127,15 @@ This makes the repository on GitHub and associates your local directory when you
 Why: You need a local workspace that is connected to the remote repo.
 
 ```sh
-# Choose a parent folder for your projects, then:
-git clone https://github.com/<your-username>/fsd-project-2025.git
+
+# Choose a parent folder for your projects, then
+
+git clone <https://github.com/><your-username>/fsd-project-2025.git
 cd fsd-project-2025
 
 # Open in VS Code
-code .
+
+code
 ```
 
 Or open VS Code normally, `open folder` and navigate to the parent folder for your project.
@@ -143,16 +149,23 @@ Why: Different projects need different Node versions. A version manager lets you
 ### macOS or Linux with `nvm`
 
 ```sh
+
 # Install nvm
-# Always read what the install script does. This is the official installer.
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# Always read what the install script does. This is the official installer
+
+curl -o- <https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh> | bash
 
 # Load nvm into your shell session
+
 export NVM_DIR="$HOME/.nvm"
+
 # shellcheck disable=SC1091
+
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Install Node 22 and set it as default
+
 nvm install 22
 nvm use 22
 nvm alias default 22
@@ -181,18 +194,17 @@ TypeScript is a **superset of JavaScript** that adds static typing.
 It compiles down to plain JavaScript, so it runs anywhere JavaScript runs.
 TypeScript helps catch errors earlier and makes large or complex projects easier to manage.
 
-It is **optional** in this course, but recommended if:  
+It is **optional** in this course, especially if you are new to programming, but recommended if:  
 
 - You are already an experienced programmer and plan an ambitious project  
 - You are experienced with JavaScript and want an extra challenge  
 - You value type safety and stricter checks in your code  
 
-SvelteKit has **built-in support for TypeScript**, so you do not need to configure it manually.
-When you initialize your project (`npm create svelte@latest`), simply choose the TypeScript option in the prompts.
+SvelteKit has **built-in support for TypeScript**. Later, when you initialize your project (`npm create svelte@latest`), choose the TypeScript option in the prompts.
 
 ```sh
 npm install -g typescript
-tsc -v 
+tsc -v
 ```
 
 ### JavaScript vs. TypeScript examples
@@ -227,7 +239,7 @@ Why: Before adding frameworks, verify the GitHub → Netlify automatic deploy lo
 mkdir -p build
 ```
 
-Create a new file names `index.html` and paste therein:
+Create a new file named `index.html` and paste therein:
 
 ```html
   <h1>Hello World! My name is YOUR_NAME_HERE!</h1>
@@ -281,14 +293,20 @@ Why: Now that the pipeline works, switch from a static test page to a real appli
 From the root of your repo:
 
 ```sh
+
 # Scaffold SvelteKit
+
 # Pick "Skeleton project" for minimal setup, or default if you prefer
+
 npm create svelte@latest .
 
-# Follow the prompts:
-# - TypeScript: choose Yes
+# Follow the prompts
+
+# - TypeScript: choose Yes (beginners choose No)
+
 # - ESLint, Prettier: recommended
-# - Playwright: optional
+
+# - Playwright: optional, but recommended
 
 npm install
 npm run dev
@@ -298,71 +316,50 @@ Visit the local dev URL that Svelte prints. Confirm the starter page renders.
 
 ---
 
-## 9. Prepare SvelteKit for Netlify static publishing to `build`
+## 9. Prepare SvelteKit for Netlify deployment
 
-You asked to set Netlify publish directory to `build`. The simplest path is to use the SvelteKit static adapter that outputs to `build`.
+For Netlify hosting, use the official Netlify adapter.
 
-1. Install the static adapter.
+1. Install the adapter.
 
 ```sh
-npm install -D @sveltejs/adapter-static
+npm install -D @sveltejs/adapter-netlify
 ```
 
 2. Configure `svelte.config.js` to use it.
 
 ```js
 // svelte.config.js
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 export default {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter({
-      // default options are fine
-      // pages: 'build',
-      // assets: 'build',
-      // fallback: undefined
-    }),
-    paths: {
-      // leave default unless you need a subpath
-    },
-    prerender: {
-      handleMissingId: 'ignore'
-    }
+    adapter: adapter(),
   }
-};
+}
 ```
 
-Notes:
-
-- The static adapter writes to `build` by default. If you ever change that, also update Netlify’s Publish directory.
-- Static adapter requires that your routes can be prerendered. The starter index route works out of the box.
-
-3. Build locally and verify the `build` folder is created.
+3. Build locally and verify that the project compiles.
 
 ```sh
 npm run build
-# Output should show adapter-static and a generated build folder
 ```
 
 ---
 
 ## 10. Push SvelteKit changes and verify Netlify deploy
 
-Why: This confirms the Netlify site now serves the SvelteKit app from the same `build` directory setting.
+Why: This confirms the Netlify site now serves the SvelteKit app.
 
 ```sh
 git add .
-git commit -m "Add SvelteKit with adapter-static and initial build"
+git commit -m "Add SvelteKit with adapter-netlify and initial build"
 git push origin main
 ```
 
-Netlify should detect the push, run no framework build command by default for a pure static folder, and publish the new `build`. If your site needs a build command, set it in Netlify to `npm run build` so Netlify runs the SvelteKit build and then publishes the `build` folder. In that case:
-
-- Build command: `npm run build`
-- Publish directory: `build`
-
+Netlify should detect the push, run the build, and publish the site.  
 Check the Netlify deploy logs. Then load your site URL. You should now see the SvelteKit starter page.
 
 ---
@@ -379,7 +376,7 @@ Edit `src/routes/+page.svelte`:
 </script>
 
 <h1>Hello World</h1>
-<p>Welcome to my SvelteKit site.</p>
+<p>My name is *Your Name*. Welcome to my SvelteKit site.</p>
 ```
 
 Commit and push:
@@ -408,7 +405,7 @@ Use this list to confirm you have a complete working setup:
 
 - [ ] GitHub account created
 - [ ] Public repository named `fsd-project-2025` exists on GitHub
-- [ ] Repository cloned locally and opened in VS Code (or your preferred IDE)
+- [ ] Repository cloned locally and opened in VS Code
 - [ ] `.gitignore` file exists in project root with `node_modules` listed
 - [ ] Git is installed locally, default branch is `main`
 - [ ] Node Version Manager installed (`nvm` or nvm-windows)
@@ -418,8 +415,8 @@ Use this list to confirm you have a complete working setup:
 - [ ] Simple static `Hello World` page deployed successfully on Netlify
 - [ ] Netlify CLI installed and working (`netlify --version` shows)
 - [ ] SvelteKit project initialized in the repo
-- [ ] SvelteKit configured with `@sveltejs/adapter-static` publishing to `build`
-- [ ] `npm run build` produces a `build` directory locally
+- [ ] SvelteKit configured with `@sveltejs/adapter-netlify`
+- [ ] `npm run build` produces output successfully
 - [ ] Netlify deploy succeeds and shows the SvelteKit starter page
 - [ ] Homepage edited to say `Hello World` and redeployed successfully
 
@@ -442,7 +439,7 @@ Submit both in Moodle.
 - **TypeScript**: Optionally provides types for better correctness and maintainability.
 - **Simple static page first**: Proves your pipeline works before adding a framework. This reduces confusion when debugging.
 - **Netlify site connected to GitHub**: Enables continuous deployment. Every push to main triggers a deploy.
-- **SvelteKit with adapter-static**: Produces a static `build` folder that Netlify can publish. Matches your requested publish directory.
+- **SvelteKit with adapter-netlify**: Produces optimized output for Netlify, with support for server-side rendering and functions.
 - **Edit and redeploy**: Confirms the loop is working end to end. You should see changes live after each push.
 
 If anything breaks, read the Netlify deploy logs, check your branch, confirm the publish directory, and verify that the repository is public and accessible.
