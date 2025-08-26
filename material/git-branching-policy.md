@@ -1,107 +1,118 @@
 # 🌱 Git Branching Policy
 
-A **Git branching policy** is a short set of rules about how we use branches in Git.  
-It tells you what’s required for this course, and what habits will make your life easier.  
+A **Git branching policy** is a set of rules about how to use branches in Git. It helps you take bold risks in feature branches while keeping the `main` branch calm, clean, and always ready to deploy.
 
-This is **not** a full manual on how to use Git.  
-For a broader introduction and hands-on commands, go to [git.md](git.md).  
+This is **not** a full Git tutorial. For commands and basics, see [git.md](git.md).
 
 ---
 
-- `main` is your stable branch that deploys to production. 🚀
+## Required Course Policy
 
-That's it. That's the course branching policy. You can push all of your changes directly to `main` if you want. You can even *force push* directly to `main` if you want!  
+- `main` is your production branch. It must always contain the latest working source code and deploy automatically to Netlify. 🚀
 
-## ⚠️ Not recommended
+That’s the only hard rule.
 
-- Pushing changes directly to `main` is not recommended.  
-- Force pushing changes to `main` is especially not recommended.  
+You **will be evaluated** on the clarity of your Git history and your branching policy. A messy or inconsistent approach makes it hard to see your progress. A clear, consistent policy highlights it.
 
-They both can lead to darkness and despair. 🕳️🐉
+---
 
-## 💡 Recommended practices
+## Recommended Strategy
 
-That said, here are some practices that will make your life easier, and that of your project evaluators.
+If you don’t have much experience with Git, use the **feature branch strategy**:
+
+1. Create a new branch from `main` whenever you start a feature.  
+
+   ```bash  
+   git checkout main  
+   git pull origin main  
+   git checkout -b search-form  
+   ```  
+
+2. Do all your work for that feature in this branch.  
+3. When it’s ready, merge it back into `main`.
+
+That’s it. This simple approach works well for solo developers and small teams.
+
+---
+
+## Strongly Recommended Practices
 
 ### 🌿 Feature branches
-When you want to add a feature to your code, create a branch from `main`.  
-This is called a **feature branch**.  
 
-`git checkout main`  
-`git pull origin main`  
-`git checkout -b search-form`  
+- Name branches with short, descriptive slugs: `search-form`, `auth-flow`, `score-tracking`.
+- Keep commits for that feature inside the branch.
+- Merge back into `main` when ready.
 
-- Name it with a short slug that describes the feature: `search-form`, `auth-flow`, `score-tracking`.  
-- Keep all commits for that feature inside this branch.  
-  - `git checkout -b branch-name`  
+⚠️ Quick way (fine for small projects):  
 
-When the feature is ready, merge it back into `main`.  
+```bash  
+git checkout main  
+git pull origin main  
+git merge search-form  
+git push origin main  
+```  
 
-⚠️  The direct way (works fine):  
-`git checkout main`  
-`git pull origin main`  
-`git merge search-form`  
-`git push origin main`  
+✅ Better way: Open a Pull Request (PR) on GitHub.  
 
-✅️ But a better way is to open a Pull Request (PR) on GitHub.  
-- You can review the changes before they land in `main`.  
-- You can be sure that your automatic tests all pass.  
-- You can view and use the new feature on Netlify’s preview deploys before it’s merged.  
-- PRs also make it easy to **“squash and merge”**, giving you one tidy commit that represents the whole feature.  
+- Lets you and others review changes before merging.  
+- Runs tests before code lands in `main`.  
+- Provides Netlify preview deploys.  
+- Supports **squash and merge** for a clean history.  
 
 ### 🔀 Pull Requests (PRs)
-When your branch is ready (or at least testable), push it and open a PR on GitHub:
 
-`git push -u origin search-form`  
+- Push your feature branch:  
 
-You can open a PR in two ways:  
-- On GitHub.com, click **Compare & pull request**.  
-- Or, from the command line with the GitHub CLI:  
-  `gh pr create`  
+  ```bash  
+  git push -u origin search-form  
+  ```  
 
-Even if you are working solo, a PR gives you:  
-- 📜 A clear summary of the change  
-- 🧐 A chance to describe the problem solved and how you solved it  
-- 🧹 A tidy place to review your own work (or get a quick review from AI or a peer)  
+- Open a PR on GitHub (via web or `gh pr create`).  
+- Use PRs even if you’re working alone — they give you:  
+  - 📜 A summary of changes  
+  - 🧐 A place to explain the problem and solution  
+  - 🧹 A tidy review step  
 
-When ready, merge (or, better, squash) the PR into `main`.  
-You can do this on GitHub.com, or from the command line with the GitHub CLI:  
+When ready, squash and merge into `main`. Delete the branch afterward:  
 
-`gh pr merge --squash` 
+```bash  
+git branch -d search-form  
+git push origin --delete search-form  
+```  
 
-Once the PR is merged, make your life easier by deleting the feature branch.  
-
-Delete it locally:  
-`git branch -d search-form`  
-
-Delete it on GitHub:  
-`git push origin --delete search-form`
+Pro-tip: You can open a PR any time, not just when your feature is ready!
 
 ### ✍️ Commits
-Make your commits small and clear.  
 
-`git add .`  
-`git commit -m "Add search form component"`  
-`git push`  
-
-- Each commit should show one small, meaningful step forward.  
-- Every programming session should have many commits — not just one at the end.  
-- Write commit messages that say *what* you did and *why*.  
-- For a style guide on how to have a beautiful commit history filled with joy and sunshine, see [How to Write a Git Commit Message](https://cbea.ms/git-commit/). 🌞🌸  
+- Keep commits small and clear.  
+- Every coding session should have many commits, not just one.  
+- Messages should say *what* changed and *why*.  
+- See [How to Write a Git Commit Message](https://cbea.ms/git-commit/) for style guidance.  
 
 ### 🗑️ About `master`
-Some tools still create a `master` branch by default. Having both a `master` and a `main` will lead to confusion.  
-So, if it appears in your repo, delete it and use `main`.  
 
-`git branch -d master`  
-`git push origin --delete master`  
+Some tools still create a `master` branch. Having both `master` and `main` will cause confusion.
 
-If there is code in `master` that you actually need, first merge it into `main`:  
+- If `master` appears, delete it:  
 
-`git checkout main`  
-`git pull origin main`  
-`git merge master`  
-`git push origin main`  
+  ```bash  
+  git branch -d master  
+  git push origin --delete master  
+  ```  
 
-Once you’re sure everything is in `main`, delete `master` to avoid future confusion.
+- If `master` has needed code, first merge it into `main`, then delete it:  
 
+  ```bash  
+  git checkout main  
+  git pull origin main  
+  git merge master  
+  git push origin main  
+  ```  
+
+---
+
+## Summary
+
+- `main` must always deploy to production.  
+- You will be evaluated on having a clear branching policy.  
+- If unsure, use featur
