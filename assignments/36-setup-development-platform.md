@@ -5,11 +5,13 @@ local project → GitHub repo → automatic Netlify deploys. It also prepares yo
 
 We will all use the same stack for this course so that everyone moves forward together. If you already have deep experience with this exact stack (especially with TypeScript), or if your intended project truly cannot be built with it, let’s talk. We can consider exceptions.
 
+If you have experience with this stack, consider skipping down to the checklist in Section 13
+
 You will:
 
 - Create a public GitHub repository named `fsd-project-2025`
 - Set up local development with VS Code and GitHub CLI
-- Install Node using a version manager and use Node v22
+- Install Node using a Node version manager (nvm) and use Node v22
 - Optionally add TypeScript tooling
 - Verify the pipeline with a simple static site
 - Initialize a SvelteKit project and deploy it
@@ -54,6 +56,16 @@ This ensures that:
   ```
 
   This ensures your system always starts with Node v22 unless you explicitly change versions.
+
+  ### `.gitignore` file
+
+  Add a text file named (exactly) `.gitignore` in the root directory of your project, and add this line:
+
+  ```text
+  node_modules
+  ```
+
+This makes sure that Git does not try to track the enormous `node_modules` folder, which is automatically generated later.
 
 - **Visual Studio Code** <https://code.visualstudio.com/download>  
   Visual Studio Code (VS Code) is a free, lightweight, and widely used Integrated Development Environment (IDE). It supports many languages, has built-in Git and GitHub integration, and a huge ecosystem of extensions (formatters, linters, debuggers, themes). We will use VS Code in this course because it is consistent across operating systems and lowers setup friction.
@@ -390,7 +402,30 @@ Wait for Netlify to redeploy and reload your site URL. You should see the new te
 
 ---
 
-## 13. Submit your links
+## 13. Checklist
+
+Use this list to confirm you have a complete working setup:
+
+- [ ] GitHub account created
+- [ ] Public repository named `fsd-project-2025` exists on GitHub
+- [ ] Repository cloned locally and opened in VS Code (or your preferred IDE)
+- [ ] `.gitignore` file exists in project root with `node_modules` listed
+- [ ] Git is installed locally, default branch is `main`
+- [ ] Node Version Manager installed (`nvm` or nvm-windows)
+- [ ] Node v22 installed and selected (`node -v` shows v22.x.x)
+- [ ] (Optional) TypeScript installed (`tsc -v` works)
+- [ ] Netlify account created and linked with GitHub
+- [ ] Simple static `Hello World` page deployed successfully on Netlify
+- [ ] Netlify CLI installed and working (`netlify --version` shows)
+- [ ] SvelteKit project initialized in the repo
+- [ ] SvelteKit configured with `@sveltejs/adapter-static` publishing to `build`
+- [ ] `npm run build` produces a `build` directory locally
+- [ ] Netlify deploy succeeds and shows the SvelteKit starter page
+- [ ] Homepage edited to say `Hello World` and redeployed successfully
+
+---
+
+## 14. Submit your links
 
 - Repository URL on GitHub for `fsd-project-2025`
 - Netlify deployment URL
