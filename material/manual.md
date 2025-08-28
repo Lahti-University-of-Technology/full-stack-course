@@ -1,42 +1,42 @@
 # Course Manual Outline
 
 - Introduction
-  - Brief overview of the course goals and what students will learn.
+  - This course will teach you how to build software by shipping a public full stack project and reflecting on the process.
 - Course Principles
-  - Empathy
-  - Transparency
-  - Direct Communication
-  - Originality
+  - Empathy: build with users and peers in mind; meet regularly as mentor and mentee [../assignments/37-mentor-meeting.md].
+  - Transparency: commit and deploy often; keep history public [../docs/ethics.md#git-commit-history].
+  - Direct Communication: document decisions plainly in README, issues, and commits.
+  - Originality: write your own code, disclose help in `AI_USAGE.md`, and keep work explainable [../docs/ethics.md#general-expectations].
 - Project Overview
-  - Description of the main course project
-  - Expectations and constraints (e.g., originality, public repo, public deployment)
-  - Client-server architecture requirement
-  - Continuous progress and visibility
+  - Description of the main course project: a non trivial MVP using Node v22, SvelteKit, and Netlify; see [Course Project](../assignments/48-course-project.md).
+  - Expectations and constraints: public GitHub repo named `fsd-project-2025`, public deploy, ethical data, steady commits.
+  - Client server architecture requirement: separate browser client and server API backed by a database.
+  - Continuous progress and visibility: weekly milestones and deploys starting with the setup assignment [../assignments/36-setup-development-platform.md].
 - Milestones and Deadlines
-  - Definition and purpose of milestones
+  - Definition and purpose of milestones: break the project into reviewable steps that show incremental progress.
   - List of example milestones:
-  - Brainstorm project ideas
-  - Choose a project
-  - Design user experience
-  - Plan architecture
-  - Choose stack and host
-  - Deploy Hello World
-  - Add CI/CD
-  - Implement API and database
-  - Frontend implementation
-  - Final deployment and presentation
-  - First milestone: public deployment
+    - Brainstorm project ideas: gather options and compare similar work.
+    - Choose a project: decide and document scope.
+    - Design user experience: sketch flows and paper prototypes [paper-prototype.md].
+    - Plan architecture: outline data flow and components [course-project-how-to.md].
+    - Choose stack and host: confirm Node, SvelteKit, and Netlify setup [../assignments/36-setup-development-platform.md].
+    - Deploy Hello World: push a live build from the main branch [../assignments/36-setup-development-platform.md].
+    - Add CI/CD: automate tests and deploys with GitHub and Netlify.
+    - Implement API and database: connect routes to a persistent store.
+    - Frontend implementation: build Svelte components and state with XState.
+    - Final deployment and presentation: ship the MVP and demo it.
+    - First milestone: public deployment: prove setup with a live URL.
 - Evaluation Criteria
-  - Clear and consistent commit history
-  - Full-stack architecture
-  - Publicly accessible source code
-  - Secure handling of secrets
-  - Stable and consistent repositories
-  - Non-trivial project scope
-  - Originality
-  - Presentation and documentation
-  - Peer and instructor evaluations
+  - Clear and consistent commit history: no big bang dumps, no rewrites [../docs/ethics.md#git-commit-history].
+  - Full stack architecture: browser client, API, and database working together.
+  - Publicly accessible source code: repository visible on GitHub.
+  - Secure handling of secrets: rotate them and never commit `.env` files [../docs/ethics.md#data-responsibility].
+  - Stable and consistent repositories: no force pushes or repo resets.
+  - Non trivial project scope: deliver an MVP that solves a real problem.
+  - Originality: code and content are your own.
+  - Presentation and documentation: README, diagrams, and commit messages explain the project.
+  - Peer and instructor evaluations: classmates and staff review progress.
 - Resources and Tools
-  - Recommended reading and reference materials
-  - Tools for development, version control, deployment, and testing
-  - Case studies and external articles
+  - Recommended reading and reference materials: start with [“From Data to Wisdom”](../assignments/36-read-ackoff-from-data-to-wisdom.md) and other [foundational writings on data](data-foundational-writings-on-data.md).
+  - Tools for development, version control, deployment, and testing: Node v22, SvelteKit, GitHub, Netlify, XState, and testing frameworks like Vitest.
+  - Case studies and external articles: see [course project how to](course-project-how-to.md) and [datasets and open source sources](datasets-open-source.md) for examples.
