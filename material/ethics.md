@@ -2,8 +2,6 @@
 
 This document sets out clear expectations for conduct in this course and the consequences of falling short.
 
-It is quite difficult to run afoul of the course expectations. It takes real effort and intent. If you understand and follow the spirit of the course, then you will have no issues.
-
 ## General Expectations
 
 You are encouraged to consult tutorials, AI, friends, coding examples, or whatever tools help you push your project, as long as:
@@ -14,13 +12,11 @@ You are encouraged to consult tutorials, AI, friends, coding examples, or whatev
 4. All data is handled responsibly.
 5. You thoroughly understand and can explain every line you submit.
 
-The rest of this document expands on these expectations and discusses edge cases.
-
 ## Git commit history
 
 A git repository automatically records a *commit history*, which is a timeline showing what work was done, when it was done, and by whom. This history is the clearest evidence of authorship and progress. In professional and academic settings, this is expected and welcomed.
 
-A credible commit history looks organic and unpolished. It shows starts, stops, abandoned ideas, errors, and backtracking. This natural pattern is easy to recognize and nearly impossible to fake.
+A credible commit history looks organic and unpolished. It shows starts, stops, abandoned ideas, errors, and backtracking. This is natural and easy to recognize.
 
 ### Expectations  
 
